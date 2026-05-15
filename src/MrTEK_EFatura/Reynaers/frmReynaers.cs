@@ -441,7 +441,8 @@ namespace MrTEK_EFatura
                                         Array.Resize(ref InvoiceList[InvoiceList.Count - 1].OrderReference, InvoiceList[InvoiceList.Count - 1].OrderReference.GetUpperBound(0) + 2);
                                     }
                                     InvoiceList[InvoiceList.Count - 1].OrderReference[InvoiceList[InvoiceList.Count - 1].OrderReference.Length - 1] = OrderReference;
-                                    ProjecAciklama1 = sLine.Split(';').Length > 3 ? sLine.Split(';')[3].Trim() : "";
+                                    ProjecAciklama1 = "ORDER:" + OrderReference.ID + " Tarih:" + OrderReference.IssueDate.ToString("yyyy-MM-dd");
+                                    ProjecAciklama1 += sLine.Split(';').Length > 3 ? "   " + sLine.Split(';')[3].Trim() : "";
                                     ProjecAciklama2 = sLine.Split(';').Length > 4 ? "Proje No: " + sLine.Split(';')[4].Trim() : "";
 
                                     ProjecAciklama3 = sLine.Split(';').Length > 5 ? sLine.Split(';')[5].Trim() : "";

@@ -1,12 +1,69 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\arge\\mrtek-efatura\\src\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0A5CCD3-C0CD-43AE-837B-F6A97565544A}|MrTEK_EFatura\\MrTEK_EFatura.csproj|c:\\arge\\mrtek-efatura\\src\\mrtek_efatura\\reynaers\\frmreynaers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0A5CCD3-C0CD-43AE-837B-F6A97565544A}|MrTEK_EFatura\\MrTEK_EFatura.csproj|solutionrelative:mrtek_efatura\\reynaers\\frmreynaers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0A5CCD3-C0CD-43AE-837B-F6A97565544A}|MrTEK_EFatura\\MrTEK_EFatura.csproj|c:\\arge\\mrtek-efatura\\src\\mrtek_efatura\\reynaers\\frmreynaers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C0A5CCD3-C0CD-43AE-837B-F6A97565544A}|MrTEK_EFatura\\MrTEK_EFatura.csproj|solutionrelative:mrtek_efatura\\reynaers\\frmreynaers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAIUNAAAAAAAAAAAqwH8NAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-05-15T14:05:00.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmReynaers.cs",
+              "DocumentMoniker": "C:\\arge\\mrtek-efatura\\src\\MrTEK_EFatura\\Reynaers\\frmReynaers.cs",
+              "RelativeDocumentMoniker": "MrTEK_EFatura\\Reynaers\\frmReynaers.cs",
+              "ToolTip": "C:\\arge\\mrtek-efatura\\src\\MrTEK_EFatura\\Reynaers\\frmReynaers.cs",
+              "RelativeToolTip": "MrTEK_EFatura\\Reynaers\\frmReynaers.cs",
+              "ViewState": "AgIAAKkBAAAAAAAAAAAwwL8BAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T13:57:49.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmReynaers.cs [Design]",
+              "DocumentMoniker": "C:\\arge\\mrtek-efatura\\src\\MrTEK_EFatura\\Reynaers\\frmReynaers.cs",
+              "RelativeDocumentMoniker": "MrTEK_EFatura\\Reynaers\\frmReynaers.cs",
+              "ToolTip": "C:\\arge\\mrtek-efatura\\src\\MrTEK_EFatura\\Reynaers\\frmReynaers.cs [Design]",
+              "RelativeToolTip": "MrTEK_EFatura\\Reynaers\\frmReynaers.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T13:57:44.684Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
