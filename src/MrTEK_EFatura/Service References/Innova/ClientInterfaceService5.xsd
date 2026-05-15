@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.SendInvoicesRaw" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.SendInvoicesRaw" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" />
+  <xs:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.Shared" />
+  <xs:complexType name="SendInvoicesRawRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" base="q1:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AcceptanceDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Invoices" nillable="true" type="tns:ArrayOfOutgoingInvoiceRaw" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SendInvoicesRawRequest" nillable="true" type="tns:SendInvoicesRawRequest" />
+  <xs:complexType name="ArrayOfOutgoingInvoiceRaw">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OutgoingInvoiceRaw" nillable="true" type="tns:OutgoingInvoiceRaw" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOutgoingInvoiceRaw" nillable="true" type="tns:ArrayOfOutgoingInvoiceRaw" />
+  <xs:complexType name="OutgoingInvoiceRaw">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Body" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.Shared" minOccurs="0" name="Header" nillable="true" type="q2:OutgoingInvoiceHeader" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutgoingInvoiceRaw" nillable="true" type="tns:OutgoingInvoiceRaw" />
+  <xs:complexType name="SendInvoicesRawResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" base="q3:ResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.Shared" minOccurs="0" name="Items" nillable="true" type="q4:ArrayOfInvoiceResultItem" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SendInvoicesRawResponse" nillable="true" type="tns:SendInvoicesRawResponse" />
+</xs:schema>

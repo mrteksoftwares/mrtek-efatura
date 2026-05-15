@@ -1,0 +1,744 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C0A5CCD3-C0CD-43AE-837B-F6A97565544A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MrTEK_EFatura</RootNamespace>
+    <AssemblyName>MrTEK_EFatura</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>MrTEK_EFatura.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>MrTEK_MF_Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.CodeParser.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v22.2.UI, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v22.2.Export, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2.UI, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v22.2.Extensions, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v22.2.Wizard, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v22.2.Extensions, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.VisualBasic">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NeoDAC, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\CevahirDevDLLs\NeoDAC.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForms\frmBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\frmBaseForm.Designer.cs">
+      <DependentUpon>frmBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="classes\clsActiveConn.cs" />
+    <Compile Include="classes\clsMember.cs" />
+    <Compile Include="classes\DBInvoice.cs" />
+    <Compile Include="classes\DBInvoiceLine.cs" />
+    <Compile Include="classes\DBInvoiceLine_Packages.cs" />
+    <Compile Include="classes\DBInvoiceLine_TaxSubtotal.cs" />
+    <Compile Include="classes\DBInvoiceLine_WithholdingTaxSubtotal.cs" />
+    <Compile Include="classes\DBInvoice_AllowanceCharge.cs" />
+    <Compile Include="classes\DBInvoice_BillingReference.cs" />
+    <Compile Include="classes\DBInvoice_DespatchDocumentReference.cs" />
+    <Compile Include="classes\DBInvoice_Log.cs" />
+    <Compile Include="classes\DBInvoice_Note.cs" />
+    <Compile Include="classes\DBInvoice_Notes.cs" />
+    <Compile Include="classes\DBInvoice_OrderReference.cs" />
+    <Compile Include="classes\DBInvoice_PaymentMeans.cs" />
+    <Compile Include="classes\DBInvoice_PaymentTerms.cs" />
+    <Compile Include="classes\DBInvoice_ReceiptDocumentReference.cs" />
+    <Compile Include="classes\DBInvoice_TaxSubtotal.cs" />
+    <Compile Include="classes\DBInvoice_WithholdingTaxSubtotal.cs" />
+    <Compile Include="classes\EFaturaConvertor.cs" />
+    <Compile Include="classes\partialDBInvoice.cs" />
+    <Compile Include="Controls\userCntDateFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\userCntDateFilter.Designer.cs">
+      <DependentUpon>userCntDateFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrint\clsPrint.cs" />
+    <Compile Include="FormPrint\frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrint\frmPrint.Designer.cs">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrint\frmPrintExternalExe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrint\frmPrintExternalExe.Designer.cs">
+      <DependentUpon>frmPrintExternalExe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrint\frmPrintItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrint\frmPrintItem.Designer.cs">
+      <DependentUpon>frmPrintItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrint\XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormPrint\XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDBOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDBOptions.Designer.cs">
+      <DependentUpon>frmDBOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInvoice.Designer.cs">
+      <DependentUpon>frmInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmInvoiceLogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInvoiceLogViewer.Designer.cs">
+      <DependentUpon>frmInvoiceLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmInvoiceViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmInvoiceViewer.designer.cs">
+      <DependentUpon>frmInvoiceViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmItems.Designer.cs">
+      <DependentUpon>frmItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modules\Define.cs" />
+    <Compile Include="classes\EFatura.cs" />
+    <Compile Include="modules\Extensions.cs" />
+    <Compile Include="modules\SqlTools.cs" />
+    <Compile Include="modules\UpgradeVersion.cs" />
+    <Compile Include="modules\Utility.cs" />
+    <Compile Include="PrintRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reynaers\frmReynaers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reynaers\frmReynaers.Designer.cs">
+      <DependentUpon>frmReynaers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Innova\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Uyumsoft\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FinansbankConn\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FinansbankUser\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="XRDesignRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XRDesignRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaseForms\frmBaseForm.resx">
+      <DependentUpon>frmBaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\userCntDateFilter.resx">
+      <DependentUpon>userCntDateFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrint\frmPrint.resx">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrint\frmPrintExternalExe.resx">
+      <DependentUpon>frmPrintExternalExe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrint\frmPrintItem.resx">
+      <DependentUpon>frmPrintItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrint\XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDBOptions.resx">
+      <DependentUpon>frmDBOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInvoice.resx">
+      <DependentUpon>frmInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInvoiceLogViewer.resx">
+      <DependentUpon>frmInvoiceLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmInvoiceViewer.resx">
+      <DependentUpon>frmInvoiceViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmItems.resx">
+      <DependentUpon>frmItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reynaers\frmReynaers.resx">
+      <DependentUpon>frmReynaers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XRDesignRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>XRDesignRibbonControllerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\Innova\ClientInterfaceService.wsdl" />
+    <None Include="Service References\Innova\ClientInterfaceService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Innova\ClientInterfaceService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Innova\ClientInterfaceService10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Innova\ClientInterfaceService11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Innova\ClientInterfaceService12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Innova\ClientInterfaceService13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Innova\ClientInterfaceService14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Innova\ClientInterfaceService15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Innova\ClientInterfaceService16.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Innova\ClientInterfaceService17.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Innova\ClientInterfaceService18.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Innova\ClientInterfaceService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Innova\ClientInterfaceService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Innova\ClientInterfaceService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Innova\ClientInterfaceService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Innova\ClientInterfaceService6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Innova\ClientInterfaceService7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Innova\ClientInterfaceService8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Innova\ClientInterfaceService9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Innova\MrTEK_EFatura.Innova.CustomerInquiryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Innova\MrTEK_EFatura.Innova.DoReconciliationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Innova\MrTEK_EFatura.Innova.DownloadInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Innova\MrTEK_EFatura.Innova.GetCustomersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Innova\MrTEK_EFatura.Innova.GetInvoicesRawResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Innova\MrTEK_EFatura.Innova.GetInvoicesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Innova\MrTEK_EFatura.Innova.GetReconciliationDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Innova\MrTEK_EFatura.Innova.InvoiceInquiryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Innova\MrTEK_EFatura.Innova.PreviewInvoiceRawResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Innova\MrTEK_EFatura.Innova.PreviewInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Innova\MrTEK_EFatura.Innova.ReconciliationInquiryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Innova\MrTEK_EFatura.Innova.ReplylInvoicesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Innova\MrTEK_EFatura.Innova.SendInvoicesRawResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Innova\MrTEK_EFatura.Innova.SendInvoicesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\Integration.wsdl" />
+    <None Include="Service References\Uyumsoft\Integration.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Uyumsoft\Integration1.wsdl" />
+    <None Include="Service References\Uyumsoft\Integration1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Uyumsoft\Integration10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Uyumsoft\Integration11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Uyumsoft\Integration12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Uyumsoft\Integration13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Uyumsoft\Integration14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Uyumsoft\Integration15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Uyumsoft\Integration16.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Uyumsoft\Integration17.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Uyumsoft\Integration18.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Uyumsoft\Integration19.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Uyumsoft\Integration2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Uyumsoft\Integration3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Uyumsoft\Integration6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Uyumsoft\Integration7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Uyumsoft\Integration8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Uyumsoft\Integration9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.ByteArrayResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.DateResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.EnvelopeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.InvoiceGtbInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.ResponseOfWhoAmIInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.StringElementResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.StringResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.SummaryReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Web References\FinansbankConn\connectorService.wsdl" />
+    <None Include="Web References\FinansbankConn\connectorService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\FinansbankConn\connectorService0.wsdl" />
+    <None Include="Web References\FinansbankConn\eFaturaKullanici.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FinansbankConn\gidenBelgeDurum.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FinansbankConn\kalanKontorBilgisi.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FinansbankConn\mukellefEFaturaKayit.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FinansbankConn\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\FinansbankConn\serviceReturnType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FinansbankUser\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\FinansbankUser\userService.wsdl" />
+    <None Include="Web References\FinansbankUser\userService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\FinansbankUser\userService0.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Aha-Soft-3d-Social-Online-writing.ico" />
+    <Content Include="Arrioch-Birdie-Adium-Adium-Bird-Connecting.ico" />
+    <Content Include="dbScripts\dbcreateScript_StoredProcedure_Eta.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dbScripts\dbcreateScript_StoredProcedure_Ozel.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dbScripts\dbcreateScript_StoredProcedure_Mikro.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dbScripts\dbcreateScript_StoredProcedure_Logo.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dbScripts\dbver_01.00.06.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dbScripts\dbver_01.00.05.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dbScripts\dbver_01.00.04.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dbScripts\dbver_01.00.03.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dbScripts\dbver_01.00.02.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dbScripts\dbcreate_script.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Grafikartes-Adobe-Cc-Folders-ID.ico" />
+    <Content Include="MrTEK_MF_Icon.ico" />
+    <Content Include="reynaers2025-05-14.xslt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Service References\Uyumsoft\Integration1.disco" />
+    <None Include="Resources\XML32.png" />
+    <None Include="Resources\xsl32.png" />
+    <None Include="Resources\printer-blue-icon32.png" />
+    <None Include="Resources\print_32.png" />
+    <None Include="Resources\Microsoft-Excel-icon32.png" />
+    <None Include="Resources\gear_32.png" />
+    <None Include="Resources\mrtek-logo-256.png" />
+    <None Include="Resources\xslt.txt" />
+    <None Include="Resources\default.xslt" />
+    <None Include="Resources\Online-writing-icon128.png" />
+    <None Include="Service References\Innova\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Innova\configuration.svcinfo" />
+    <None Include="Service References\Innova\configuration91.svcinfo" />
+    <None Include="Service References\Innova\ClientInterfaceService.disco" />
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.CloneInvoiceServiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.DocumentResponseStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.FlagResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.InboxInvoiceListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.InvoiceDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.InvoiceIdentitiesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.InvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.InvoicesDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.InvoicesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.InvoiceStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.InvoiceStatusWithLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.InvoiceViewResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.OutboxInvoiceListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.SystemUsersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\MrTEK_EFatura.Uyumsoft.UserAliassesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Uyumsoft\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Uyumsoft\configuration.svcinfo" />
+    <None Include="Service References\Uyumsoft\configuration91.svcinfo" />
+    <None Include="Service References\Uyumsoft\Integration.disco" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\ID-icon128.png" />
+    <None Include="Resources\ID-icon256.png" />
+    <None Include="Resources\GridView.png" />
+    <None Include="Resources\Adium-Bird-Connecting-icon_256.png" />
+    <None Include="Resources\print-icon_32x32.png" />
+    <None Include="Resources\Actions-view-refresh-icon_32x32.png" />
+    <None Include="Resources\Excel-icon_32x32.png" />
+    <None Include="Resources\tekstura nebo.jpg" />
+    <None Include="Resources\sarchem logo.png" />
+    <None Include="Resources\mrtek logo2.png" />
+    <None Include="Resources\chemicals2.png" />
+    <None Include="Resources\chemicals.png" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\1358175154616.jpg" />
+    <None Include="Resources\mrtek logo.png" />
+    <None Include="Resources\print-icon_32.png" />
+    <None Include="Resources\Database-Active-icon_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Innova\" />
+    <WCFMetadataStorage Include="Service References\Uyumsoft\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://178.251.43.49:8080/efatura/ws/connectorService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FinansbankConn\</RelPath>
+      <UpdateFromURL>http://178.251.43.49:8080/efatura/ws/connectorService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MrTEK_EFatura_FinansbankConn_connectorService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://178.251.43.49:8080/efatura/ws/userService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FinansbankUser\</RelPath>
+      <UpdateFromURL>http://178.251.43.49:8080/efatura/ws/userService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MrTEK_EFatura_FinansbankUser_userService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

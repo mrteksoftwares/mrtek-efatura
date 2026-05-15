@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ClientInterfaceService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_IClientInterfaceService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.InvoiceInquiry" />
+      <xsd:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" />
+      <xsd:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.SendInvoices" />
+      <xsd:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.Shared" />
+      <xsd:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd6" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.SendInvoicesRaw" />
+      <xsd:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.GetInvoices" />
+      <xsd:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.GetInvoicesRaw" />
+      <xsd:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd10" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.ReplyInvoices" />
+      <xsd:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd11" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.CustomerInquiry" />
+      <xsd:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd12" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.ReconciliationInquiry" />
+      <xsd:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd13" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.DoReconciliation" />
+      <xsd:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd14" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.GetReconciliationDetail" />
+      <xsd:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd15" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.GetCustomers" />
+      <xsd:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd16" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.DownloadInvoice" />
+      <xsd:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd17" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.PreviewInvoice" />
+      <xsd:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd18" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.PreviewInvoiceRaw" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IClientInterfaceService_InvoiceInquiry_InputMessage">
+    <wsdl:part name="parameters" element="tns:InvoiceInquiry" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_InvoiceInquiry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InvoiceInquiryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_SendInvoices_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendInvoices" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_SendInvoices_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendInvoicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_SendInvoicesRaw_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendInvoicesRaw" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_SendInvoicesRaw_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendInvoicesRawResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_GetInvoices_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoices" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_GetInvoices_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_GetInvoicesRaw_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoicesRaw" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_GetInvoicesRaw_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInvoicesRawResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_ReplyInvoices_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReplyInvoices" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_ReplyInvoices_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReplyInvoicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_CustomerInquiry_InputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerInquiry" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_CustomerInquiry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerInquiryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_ReconciliationInquiry_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReconciliationInquiry" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_ReconciliationInquiry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReconciliationInquiryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_DoReconciliation_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoReconciliation" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_DoReconciliation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoReconciliationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_GetReconciliationDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReconciliationDetail" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_GetReconciliationDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReconciliationDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_GetCustomers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomers" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_GetCustomers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_DownloadInvoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadInvoice" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_DownloadInvoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_PreviewInvoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:PreviewInvoice" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_PreviewInvoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PreviewInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_PreviewInvoiceRaw_InputMessage">
+    <wsdl:part name="parameters" element="tns:PreviewInvoiceRaw" />
+  </wsdl:message>
+  <wsdl:message name="IClientInterfaceService_PreviewInvoiceRaw_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PreviewInvoiceRawResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IClientInterfaceService">
+    <wsdl:operation name="InvoiceInquiry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientInterfaceService/InvoiceInquiry" message="tns:IClientInterfaceService_InvoiceInquiry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientInterfaceService/InvoiceInquiryResponse" message="tns:IClientInterfaceService_InvoiceInquiry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendInvoices">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientInterfaceService/SendInvoices" message="tns:IClientInterfaceService_SendInvoices_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientInterfaceService/SendInvoicesResponse" message="tns:IClientInterfaceService_SendInvoices_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendInvoicesRaw">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientInterfaceService/SendInvoicesRaw" message="tns:IClientInterfaceService_SendInvoicesRaw_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientInterfaceService/SendInvoicesRawResponse" message="tns:IClientInterfaceService_SendInvoicesRaw_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoices">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientInterfaceService/GetInvoices" message="tns:IClientInterfaceService_GetInvoices_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientInterfaceService/GetInvoicesResponse" message="tns:IClientInterfaceService_GetInvoices_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoicesRaw">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientInterfaceService/GetInvoicesRaw" message="tns:IClientInterfaceService_GetInvoicesRaw_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientInterfaceService/GetInvoicesRawResponse" message="tns:IClientInterfaceService_GetInvoicesRaw_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReplyInvoices">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientInterfaceService/ReplyInvoices" message="tns:IClientInterfaceService_ReplyInvoices_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientInterfaceService/ReplyInvoicesResponse" message="tns:IClientInterfaceService_ReplyInvoices_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerInquiry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientInterfaceService/CustomerInquiry" message="tns:IClientInterfaceService_CustomerInquiry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientInterfaceService/CustomerInquiryResponse" message="tns:IClientInterfaceService_CustomerInquiry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReconciliationInquiry">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientInterfaceService/ReconciliationInquiry" message="tns:IClientInterfaceService_ReconciliationInquiry_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientInterfaceService/ReconciliationInquiryResponse" message="tns:IClientInterfaceService_ReconciliationInquiry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DoReconciliation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientInterfaceService/DoReconciliation" message="tns:IClientInterfaceService_DoReconciliation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientInterfaceService/DoReconciliationResponse" message="tns:IClientInterfaceService_DoReconciliation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReconciliationDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientInterfaceService/GetReconciliationDetail" message="tns:IClientInterfaceService_GetReconciliationDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientInterfaceService/GetReconciliationDetailResponse" message="tns:IClientInterfaceService_GetReconciliationDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientInterfaceService/GetCustomers" message="tns:IClientInterfaceService_GetCustomers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientInterfaceService/GetCustomersResponse" message="tns:IClientInterfaceService_GetCustomers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadInvoice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientInterfaceService/DownloadInvoice" message="tns:IClientInterfaceService_DownloadInvoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientInterfaceService/DownloadInvoiceResponse" message="tns:IClientInterfaceService_DownloadInvoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviewInvoice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientInterfaceService/PreviewInvoice" message="tns:IClientInterfaceService_PreviewInvoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientInterfaceService/PreviewInvoiceResponse" message="tns:IClientInterfaceService_PreviewInvoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviewInvoiceRaw">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientInterfaceService/PreviewInvoiceRaw" message="tns:IClientInterfaceService_PreviewInvoiceRaw_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientInterfaceService/PreviewInvoiceRawResponse" message="tns:IClientInterfaceService_PreviewInvoiceRaw_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IClientInterfaceService" type="tns:IClientInterfaceService">
+    <wsp:PolicyReference URI="#BasicHttpBinding_IClientInterfaceService_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InvoiceInquiry">
+      <soap:operation soapAction="http://tempuri.org/IClientInterfaceService/InvoiceInquiry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendInvoices">
+      <soap:operation soapAction="http://tempuri.org/IClientInterfaceService/SendInvoices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendInvoicesRaw">
+      <soap:operation soapAction="http://tempuri.org/IClientInterfaceService/SendInvoicesRaw" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoices">
+      <soap:operation soapAction="http://tempuri.org/IClientInterfaceService/GetInvoices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInvoicesRaw">
+      <soap:operation soapAction="http://tempuri.org/IClientInterfaceService/GetInvoicesRaw" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReplyInvoices">
+      <soap:operation soapAction="http://tempuri.org/IClientInterfaceService/ReplyInvoices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerInquiry">
+      <soap:operation soapAction="http://tempuri.org/IClientInterfaceService/CustomerInquiry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReconciliationInquiry">
+      <soap:operation soapAction="http://tempuri.org/IClientInterfaceService/ReconciliationInquiry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DoReconciliation">
+      <soap:operation soapAction="http://tempuri.org/IClientInterfaceService/DoReconciliation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReconciliationDetail">
+      <soap:operation soapAction="http://tempuri.org/IClientInterfaceService/GetReconciliationDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomers">
+      <soap:operation soapAction="http://tempuri.org/IClientInterfaceService/GetCustomers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadInvoice">
+      <soap:operation soapAction="http://tempuri.org/IClientInterfaceService/DownloadInvoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviewInvoice">
+      <soap:operation soapAction="http://tempuri.org/IClientInterfaceService/PreviewInvoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviewInvoiceRaw">
+      <soap:operation soapAction="http://tempuri.org/IClientInterfaceService/PreviewInvoiceRaw" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ClientInterfaceService">
+    <wsdl:port name="BasicHttpBinding_IClientInterfaceService" binding="tns:BasicHttpBinding_IClientInterfaceService">
+      <soap:address location="https://efatura.innova.com.tr/ClientInterfaceService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

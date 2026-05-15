@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.CustomerInquiry" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.CustomerInquiry" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd6" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" />
+  <xs:complexType name="CustomerInquiryRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" base="q1:RequestBase">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="IdentityNumbers" nillable="true" type="q2:ArrayOfstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CustomerInquiryRequest" nillable="true" type="tns:CustomerInquiryRequest" />
+  <xs:complexType name="CustomerInquiryResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" base="q3:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Customers" nillable="true" type="tns:ArrayOfCustomer" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CustomerInquiryResponse" nillable="true" type="tns:CustomerInquiryResponse" />
+  <xs:complexType name="ArrayOfCustomer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Customer" nillable="true" type="tns:Customer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCustomer" nillable="true" type="tns:ArrayOfCustomer" />
+  <xs:complexType name="Customer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdentityNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsExists" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ReceiverAliasses" nillable="true" type="tns:ArrayOfReceiverAlias" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Customer" nillable="true" type="tns:Customer" />
+  <xs:complexType name="ArrayOfReceiverAlias">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ReceiverAlias" nillable="true" type="tns:ReceiverAlias" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfReceiverAlias" nillable="true" type="tns:ArrayOfReceiverAlias" />
+  <xs:complexType name="ReceiverAlias">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Alias" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReceiverAlias" nillable="true" type="tns:ReceiverAlias" />
+</xs:schema>

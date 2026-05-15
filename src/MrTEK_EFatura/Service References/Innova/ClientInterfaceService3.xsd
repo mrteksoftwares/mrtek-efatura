@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.Shared" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.Shared" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd6" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="InvoiceBody">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountingCustomerParty" nillable="true" type="tns:CustomerParty" />
+      <xs:element minOccurs="0" name="AccountingSupplierParty" nillable="true" type="tns:SupplierParty" />
+      <xs:element minOccurs="0" name="AdditionalDocumentReference" nillable="true" type="tns:ArrayOfDocumentReference" />
+      <xs:element minOccurs="0" name="AllowanceCharge" nillable="true" type="tns:AllowanceCharge" />
+      <xs:element minOccurs="0" name="CopyIndicator" type="xs:boolean" />
+      <xs:element minOccurs="0" name="DespatchDocumentReference" nillable="true" type="tns:ArrayOfDocumentReference" />
+      <xs:element minOccurs="0" name="DocumentCurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoiceLine" nillable="true" type="tns:ArrayOfInvoiceLine" />
+      <xs:element minOccurs="0" name="InvoicePeriod" nillable="true" type="tns:Period" />
+      <xs:element minOccurs="0" name="InvoiceTypeCode" type="xs:int" />
+      <xs:element minOccurs="0" name="IssueDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LegalMonetaryTotal" nillable="true" type="tns:MonetaryTotal" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Notes" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="OrderReference" nillable="true" type="tns:OrderReference" />
+      <xs:element minOccurs="0" name="PaymentAlternativeCurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaymentAlternativeExchangeRate" nillable="true" type="tns:ExchangeRate" />
+      <xs:element minOccurs="0" name="PaymentCurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaymentExchangeRate" nillable="true" type="tns:ExchangeRate" />
+      <xs:element minOccurs="0" name="PaymentMeans" nillable="true" type="tns:ArrayOfPaymentMeans" />
+      <xs:element minOccurs="0" name="PaymentTerms" nillable="true" type="tns:PaymentTerms" />
+      <xs:element minOccurs="0" name="PricingCurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PricingExchangeRate" nillable="true" type="tns:ExchangeRate" />
+      <xs:element minOccurs="0" name="ProfileID" type="xs:int" />
+      <xs:element minOccurs="0" name="ReceiptDocumentReference" nillable="true" type="tns:ArrayOfDocumentReference" />
+      <xs:element minOccurs="0" name="TaxCurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TaxExchangeRate" nillable="true" type="tns:ExchangeRate" />
+      <xs:element minOccurs="0" name="TaxTotal" nillable="true" type="tns:ArrayOfTaxTotal" />
+      <xs:element minOccurs="0" name="UUID" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InvoiceBody" nillable="true" type="tns:InvoiceBody" />
+  <xs:complexType name="CustomerParty">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Party" nillable="true" type="tns:Party" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomerParty" nillable="true" type="tns:CustomerParty" />
+  <xs:complexType name="Party">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgentParty" nillable="true" type="tns:AgentParty" />
+      <xs:element minOccurs="0" name="Contact" nillable="true" type="tns:Contact" />
+      <xs:element minOccurs="0" name="PartyIdentifications" nillable="true" type="tns:ArrayOfPartyIdentification" />
+      <xs:element minOccurs="0" name="PartyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PartyTax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Person" nillable="true" type="tns:Person" />
+      <xs:element minOccurs="0" name="PostalAddress" nillable="true" type="tns:Address" />
+      <xs:element minOccurs="0" name="WebsiteURI" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Party" nillable="true" type="tns:Party" />
+  <xs:complexType name="AgentParty">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Contact" nillable="true" type="tns:Contact" />
+      <xs:element minOccurs="0" name="PartyIdentifications" nillable="true" type="tns:ArrayOfPartyIdentification" />
+      <xs:element minOccurs="0" name="PartyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PartyTax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Person" nillable="true" type="tns:Person" />
+      <xs:element minOccurs="0" name="PostalAddress" nillable="true" type="tns:Address" />
+      <xs:element minOccurs="0" name="WebsiteURI" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AgentParty" nillable="true" type="tns:AgentParty" />
+  <xs:complexType name="Contact">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ElectronicMail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OtherCommunication" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telephone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Contact" nillable="true" type="tns:Contact" />
+  <xs:complexType name="ArrayOfPartyIdentification">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PartyIdentification" nillable="true" type="tns:PartyIdentification" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPartyIdentification" nillable="true" type="tns:ArrayOfPartyIdentification" />
+  <xs:complexType name="PartyIdentification">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SchemeID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PartyIdentification" nillable="true" type="tns:PartyIdentification" />
+  <xs:complexType name="Person">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FamilyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NameSuffix" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Person" nillable="true" type="tns:Person" />
+  <xs:complexType name="Address">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BuildingName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BuildingNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CitySubdivisionName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="tns:Country" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostalZone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Region" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Room" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StreetName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Address" nillable="true" type="tns:Address" />
+  <xs:complexType name="Country">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdentificationCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Country" nillable="true" type="tns:Country" />
+  <xs:complexType name="SupplierParty">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Party" nillable="true" type="tns:Party" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SupplierParty" nillable="true" type="tns:SupplierParty" />
+  <xs:complexType name="ArrayOfDocumentReference">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DocumentReference" nillable="true" type="tns:DocumentReference" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDocumentReference" nillable="true" type="tns:ArrayOfDocumentReference" />
+  <xs:complexType name="DocumentReference">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Attachment" nillable="true" type="tns:Attachment" />
+      <xs:element minOccurs="0" name="DocumentType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocumentTypeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IssueDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocumentReference" nillable="true" type="tns:DocumentReference" />
+  <xs:complexType name="Attachment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmbeddedDocumentBinaryObject" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExternalReference" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FileName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MimeCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Attachment" nillable="true" type="tns:Attachment" />
+  <xs:complexType name="AllowanceCharge">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AllowanceChargeReason" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Amount" nillable="true" type="tns:Amount" />
+      <xs:element minOccurs="0" name="BaseAmount" nillable="true" type="tns:Amount" />
+      <xs:element minOccurs="0" name="ChargeIndicator" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MultiplierFactorNumeric" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AllowanceCharge" nillable="true" type="tns:AllowanceCharge" />
+  <xs:complexType name="Amount">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Amount" nillable="true" type="tns:Amount" />
+  <xs:complexType name="ArrayOfInvoiceLine">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InvoiceLine" nillable="true" type="tns:InvoiceLine" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInvoiceLine" nillable="true" type="tns:ArrayOfInvoiceLine" />
+  <xs:complexType name="InvoiceLine">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AllowanceCharge" nillable="true" type="tns:AllowanceCharge" />
+      <xs:element minOccurs="0" name="InvoicedQuantityUnitCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="InvoicedQuantityValue" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Item" nillable="true" type="tns:Item" />
+      <xs:element minOccurs="0" name="LineExtensionAmount" nillable="true" type="tns:Amount" />
+      <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Price" nillable="true" type="tns:Amount" />
+      <xs:element minOccurs="0" name="TaxTotal" nillable="true" type="tns:TaxTotal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InvoiceLine" nillable="true" type="tns:InvoiceLine" />
+  <xs:complexType name="Item">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BrandName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BuyersItemIdentification" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CommodityClassification" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ManufacturersItemIdentification" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModelName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SellersItemIdentification" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Item" nillable="true" type="tns:Item" />
+  <xs:complexType name="TaxTotal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TaxAmount" nillable="true" type="tns:Amount" />
+      <xs:element minOccurs="0" name="TaxSubtotal" nillable="true" type="tns:ArrayOfTaxSubtotal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TaxTotal" nillable="true" type="tns:TaxTotal" />
+  <xs:complexType name="ArrayOfTaxSubtotal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TaxSubtotal" nillable="true" type="tns:TaxSubtotal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTaxSubtotal" nillable="true" type="tns:ArrayOfTaxSubtotal" />
+  <xs:complexType name="TaxSubtotal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BaseUnitMeasure" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CalculationSequenceNumeric" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PerUnitAmount" nillable="true" type="tns:Amount" />
+      <xs:element minOccurs="0" name="Percent" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TaxAmount" nillable="true" type="tns:Amount" />
+      <xs:element minOccurs="0" name="TaxCategoryExemptionReason" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TaxCategorySchemeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TaxCategorySchemeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TaxableAmount" nillable="true" type="tns:Amount" />
+      <xs:element minOccurs="0" name="TransactionCurrencyTaxAmount" nillable="true" type="tns:Amount" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TaxSubtotal" nillable="true" type="tns:TaxSubtotal" />
+  <xs:complexType name="Period">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DurationMeasureCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DurationMeasureValue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Period" nillable="true" type="tns:Period" />
+  <xs:complexType name="MonetaryTotal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AllowanceTotalAmount" nillable="true" type="tns:Amount" />
+      <xs:element minOccurs="0" name="ChargeTotalAmount" nillable="true" type="tns:Amount" />
+      <xs:element minOccurs="0" name="LineExtensionAmount" nillable="true" type="tns:Amount" />
+      <xs:element minOccurs="0" name="PayableAmount" nillable="true" type="tns:Amount" />
+      <xs:element minOccurs="0" name="PayableRoundingAmount" nillable="true" type="tns:Amount" />
+      <xs:element minOccurs="0" name="TaxExclusiveAmount" nillable="true" type="tns:Amount" />
+      <xs:element minOccurs="0" name="TaxInclusiveAmount" nillable="true" type="tns:Amount" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MonetaryTotal" nillable="true" type="tns:MonetaryTotal" />
+  <xs:complexType name="OrderReference">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DocumentReference" nillable="true" type="tns:DocumentReference" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IssueDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderReference" nillable="true" type="tns:OrderReference" />
+  <xs:complexType name="ExchangeRate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CalculationRate" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SourceCurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TargetCurrencyCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExchangeRate" nillable="true" type="tns:ExchangeRate" />
+  <xs:complexType name="ArrayOfPaymentMeans">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaymentMeans" nillable="true" type="tns:PaymentMeans" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPaymentMeans" nillable="true" type="tns:ArrayOfPaymentMeans" />
+  <xs:complexType name="PaymentMeans">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="InstructionNote" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayeeFinancialAccount" nillable="true" type="tns:FinancialAccount" />
+      <xs:element minOccurs="0" name="PaymentChannelCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaymentDueDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PaymentMeansCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaymentMeans" nillable="true" type="tns:PaymentMeans" />
+  <xs:complexType name="FinancialAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaymentNote" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FinancialAccount" nillable="true" type="tns:FinancialAccount" />
+  <xs:complexType name="PaymentTerms">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" nillable="true" type="tns:Amount" />
+      <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PenaltySurchargePercent" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PaymentTerms" nillable="true" type="tns:PaymentTerms" />
+  <xs:complexType name="ArrayOfTaxTotal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TaxTotal" nillable="true" type="tns:TaxTotal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTaxTotal" nillable="true" type="tns:ArrayOfTaxTotal" />
+  <xs:complexType name="OutgoingInvoiceHeader">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="InvoiceLabels" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element minOccurs="0" name="InvoiceNumberPrefix" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsDraft" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsOverrideWithRetry" type="xs:boolean" />
+      <xs:element minOccurs="0" name="OperationSourceCode" type="xs:int" />
+      <xs:element minOccurs="0" name="ReceiverAlias" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReceiverIdentityNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderAlias" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrackNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutgoingInvoiceHeader" nillable="true" type="tns:OutgoingInvoiceHeader" />
+  <xs:complexType name="ArrayOfInvoiceResultItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InvoiceResultItem" nillable="true" type="tns:InvoiceResultItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInvoiceResultItem" nillable="true" type="tns:ArrayOfInvoiceResultItem" />
+  <xs:complexType name="InvoiceResultItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="InvoiceNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReferenceNumber" type="xs:long" />
+      <xs:element minOccurs="0" name="ResponseCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResponseDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResponseStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="TrackNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ViewUrl" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InvoiceResultItem" nillable="true" type="tns:InvoiceResultItem" />
+  <xs:complexType name="IncomingInvoiceHeader">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ReceiveDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ReceiverAlias" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReferenceNumber" type="xs:long" />
+      <xs:element minOccurs="0" name="SenderAlias" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderIdentityNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ViewUrl" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IncomingInvoiceHeader" nillable="true" type="tns:IncomingInvoiceHeader" />
+</xs:schema>

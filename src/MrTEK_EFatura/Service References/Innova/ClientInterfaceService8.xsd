@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.InvoiceInquiry" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.InvoiceInquiry" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" />
+  <xs:complexType name="InvoiceInquiryRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" base="q1:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ReferenceNumber" type="xs:long" />
+          <xs:element minOccurs="0" name="TrackNumber" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InvoiceInquiryRequest" nillable="true" type="tns:InvoiceInquiryRequest" />
+  <xs:complexType name="InvoiceInquiryResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" base="q2:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="EnvelopeStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="EnvelopeStatusDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InvoiceNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InvoiceStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="InvoiceStatusDescription" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsCompleted" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InvoiceInquiryResponse" nillable="true" type="tns:InvoiceInquiryResponse" />
+</xs:schema>

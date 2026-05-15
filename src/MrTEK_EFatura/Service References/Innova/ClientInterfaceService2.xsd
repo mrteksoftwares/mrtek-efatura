@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.SendInvoices" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.SendInvoices" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" />
+  <xs:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.Shared" />
+  <xs:complexType name="SendInvoicesRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" base="q1:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AcceptanceDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Invoices" nillable="true" type="tns:ArrayOfOutgoingInvoice" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SendInvoicesRequest" nillable="true" type="tns:SendInvoicesRequest" />
+  <xs:complexType name="ArrayOfOutgoingInvoice">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OutgoingInvoice" nillable="true" type="tns:OutgoingInvoice" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOutgoingInvoice" nillable="true" type="tns:ArrayOfOutgoingInvoice" />
+  <xs:complexType name="OutgoingInvoice">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.Shared" minOccurs="0" name="Body" nillable="true" type="q2:InvoiceBody" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.Shared" minOccurs="0" name="Header" nillable="true" type="q3:OutgoingInvoiceHeader" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OutgoingInvoice" nillable="true" type="tns:OutgoingInvoice" />
+  <xs:complexType name="SendInvoicesResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" base="q4:ResponseBase">
+        <xs:sequence>
+          <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.Shared" minOccurs="0" name="Items" nillable="true" type="q5:ArrayOfInvoiceResultItem" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SendInvoicesResponse" nillable="true" type="tns:SendInvoicesResponse" />
+</xs:schema>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.ReplyInvoices" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.ReplyInvoices" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" />
+  <xs:complexType name="ReplylInvoicesRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" base="q1:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AcceptanceDateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Items" nillable="true" type="tns:ArrayOfReplyInvoiceItem" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ReplylInvoicesRequest" nillable="true" type="tns:ReplylInvoicesRequest" />
+  <xs:complexType name="ArrayOfReplyInvoiceItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ReplyInvoiceItem" nillable="true" type="tns:ReplyInvoiceItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfReplyInvoiceItem" nillable="true" type="tns:ArrayOfReplyInvoiceItem" />
+  <xs:complexType name="ReplyInvoiceItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ReferenceNumber" type="xs:long" />
+      <xs:element minOccurs="0" name="ReplyDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReplyState" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReplyInvoiceItem" nillable="true" type="tns:ReplyInvoiceItem" />
+  <xs:complexType name="ReplylInvoicesResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" base="q2:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Items" nillable="true" type="tns:ArrayOfProcessResultItem" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ReplylInvoicesResponse" nillable="true" type="tns:ReplylInvoicesResponse" />
+  <xs:complexType name="ArrayOfProcessResultItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProcessResultItem" nillable="true" type="tns:ProcessResultItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProcessResultItem" nillable="true" type="tns:ArrayOfProcessResultItem" />
+  <xs:complexType name="ProcessResultItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ReferenceNumber" type="xs:long" />
+      <xs:element minOccurs="0" name="ResponseCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResponseDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResponseStatus" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProcessResultItem" nillable="true" type="tns:ProcessResultItem" />
+</xs:schema>

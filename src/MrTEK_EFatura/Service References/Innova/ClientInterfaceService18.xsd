@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.PreviewInvoice" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.PreviewInvoice" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" />
+  <xs:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.Shared" />
+  <xs:complexType name="PreviewInvoiceRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" base="q1:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Invoice" nillable="true" type="tns:InvoiceToPreview" />
+          <xs:element minOccurs="0" name="ViewContentType" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PreviewInvoiceRequest" nillable="true" type="tns:PreviewInvoiceRequest" />
+  <xs:complexType name="InvoiceToPreview">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.Shared" minOccurs="0" name="Body" nillable="true" type="q2:InvoiceBody" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.Shared" minOccurs="0" name="Header" nillable="true" type="q3:OutgoingInvoiceHeader" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InvoiceToPreview" nillable="true" type="tns:InvoiceToPreview" />
+  <xs:complexType name="PreviewInvoiceResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" base="q4:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ViewContent" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PreviewInvoiceResponse" nillable="true" type="tns:PreviewInvoiceResponse" />
+</xs:schema>

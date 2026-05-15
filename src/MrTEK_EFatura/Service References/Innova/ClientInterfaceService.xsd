@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.ReconciliationInquiry" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO.ReconciliationInquiry" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://efatura.innova.com.tr/ClientInterfaceService?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" />
+  <xs:complexType name="ReconciliationInquiryRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" base="q1:RequestBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ReceivedInvoiceCount" type="xs:int" />
+          <xs:element minOccurs="0" name="ReconciliationDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="SentInvoiceCount" type="xs:int" />
+          <xs:element minOccurs="0" name="SentInvoiceReplyCount" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ReconciliationInquiryRequest" nillable="true" type="tns:ReconciliationInquiryRequest" />
+  <xs:complexType name="ReconciliationInquiryResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/PayFlex.EFatura.ClientInterface.Contract.DTO" base="q2:ResponseBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DeliveredInvoiceCount" type="xs:int" />
+          <xs:element minOccurs="0" name="ReceivedInvoiceCount" type="xs:int" />
+          <xs:element minOccurs="0" name="ReceivedInvoiceReplyCount" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ReconciliationInquiryResponse" nillable="true" type="tns:ReconciliationInquiryResponse" />
+</xs:schema>

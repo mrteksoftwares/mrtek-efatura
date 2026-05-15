@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://service.connector.uut.cs.com.tr/" targetNamespace="http://service.connector.uut.cs.com.tr/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://178.251.43.49:8080/efatura/ws/connectorService?xsd=1" namespace="http://service.connector.uut.cs.com.tr/" />
+    </xsd:schema>
+  </types>
+  <message name="cokluGidenBelgeDurumSorgula">
+    <part name="parameters" element="tns:cokluGidenBelgeDurumSorgula" />
+  </message>
+  <message name="cokluGidenBelgeDurumSorgulaResponse">
+    <part name="parameters" element="tns:cokluGidenBelgeDurumSorgulaResponse" />
+  </message>
+  <message name="gidenBelgeDurumSorgulaExt">
+    <part name="parameters" element="tns:gidenBelgeDurumSorgulaExt" />
+  </message>
+  <message name="gidenBelgeDurumSorgulaExtResponse">
+    <part name="parameters" element="tns:gidenBelgeDurumSorgulaExtResponse" />
+  </message>
+  <message name="gidenBelgeDurumSorgula">
+    <part name="parameters" element="tns:gidenBelgeDurumSorgula" />
+  </message>
+  <message name="gidenBelgeDurumSorgulaResponse">
+    <part name="parameters" element="tns:gidenBelgeDurumSorgulaResponse" />
+  </message>
+  <message name="gidenBelgeDurumSorgulaEttn">
+    <part name="parameters" element="tns:gidenBelgeDurumSorgulaEttn" />
+  </message>
+  <message name="gidenBelgeDurumSorgulaEttnResponse">
+    <part name="parameters" element="tns:gidenBelgeDurumSorgulaEttnResponse" />
+  </message>
+  <message name="gidenBelgeDurumSorgulaYerelBelgeNo">
+    <part name="parameters" element="tns:gidenBelgeDurumSorgulaYerelBelgeNo" />
+  </message>
+  <message name="gidenBelgeDurumSorgulaYerelBelgeNoResponse">
+    <part name="parameters" element="tns:gidenBelgeDurumSorgulaYerelBelgeNoResponse" />
+  </message>
+  <message name="gelenBelgeDurumSorgulaExt">
+    <part name="parameters" element="tns:gelenBelgeDurumSorgulaExt" />
+  </message>
+  <message name="gelenBelgeDurumSorgulaExtResponse">
+    <part name="parameters" element="tns:gelenBelgeDurumSorgulaExtResponse" />
+  </message>
+  <message name="gelenBelgeDurumSorgula">
+    <part name="parameters" element="tns:gelenBelgeDurumSorgula" />
+  </message>
+  <message name="gelenBelgeDurumSorgulaResponse">
+    <part name="parameters" element="tns:gelenBelgeDurumSorgulaResponse" />
+  </message>
+  <message name="gelenBelgeleriListeleExt">
+    <part name="parameters" element="tns:gelenBelgeleriListeleExt" />
+  </message>
+  <message name="gelenBelgeleriListeleExtResponse">
+    <part name="parameters" element="tns:gelenBelgeleriListeleExtResponse" />
+  </message>
+  <message name="Exception">
+    <part name="fault" element="tns:Exception" />
+  </message>
+  <message name="gelenBelgeleriListele">
+    <part name="parameters" element="tns:gelenBelgeleriListele" />
+  </message>
+  <message name="gelenBelgeleriListeleResponse">
+    <part name="parameters" element="tns:gelenBelgeleriListeleResponse" />
+  </message>
+  <message name="yereleAktarilacakBelgeleriAl">
+    <part name="parameters" element="tns:yereleAktarilacakBelgeleriAl" />
+  </message>
+  <message name="yereleAktarilacakBelgeleriAlResponse">
+    <part name="parameters" element="tns:yereleAktarilacakBelgeleriAlResponse" />
+  </message>
+  <message name="yereleAktarilacakBelgeleriAlExt">
+    <part name="parameters" element="tns:yereleAktarilacakBelgeleriAlExt" />
+  </message>
+  <message name="yereleAktarilacakBelgeleriAlExtResponse">
+    <part name="parameters" element="tns:yereleAktarilacakBelgeleriAlExtResponse" />
+  </message>
+  <message name="gelenBelgeleriAlExt">
+    <part name="parameters" element="tns:gelenBelgeleriAlExt" />
+  </message>
+  <message name="gelenBelgeleriAlExtResponse">
+    <part name="parameters" element="tns:gelenBelgeleriAlExtResponse" />
+  </message>
+  <message name="gelenBelgeleriAlExt2">
+    <part name="parameters" element="tns:gelenBelgeleriAlExt2" />
+  </message>
+  <message name="gelenBelgeleriAlExt2Response">
+    <part name="parameters" element="tns:gelenBelgeleriAlExt2Response" />
+  </message>
+  <message name="gelenBelgeleriAl">
+    <part name="parameters" element="tns:gelenBelgeleriAl" />
+  </message>
+  <message name="gelenBelgeleriAlResponse">
+    <part name="parameters" element="tns:gelenBelgeleriAlResponse" />
+  </message>
+  <message name="belgeGonderExt">
+    <part name="parameters" element="tns:belgeGonderExt" />
+  </message>
+  <message name="belgeGonderExtResponse">
+    <part name="parameters" element="tns:belgeGonderExtResponse" />
+  </message>
+  <message name="belgeGonder">
+    <part name="parameters" element="tns:belgeGonder" />
+  </message>
+  <message name="belgeGonderResponse">
+    <part name="parameters" element="tns:belgeGonderResponse" />
+  </message>
+  <message name="efaturaKullanicisi">
+    <part name="parameters" element="tns:efaturaKullanicisi" />
+  </message>
+  <message name="efaturaKullanicisiResponse">
+    <part name="parameters" element="tns:efaturaKullanicisiResponse" />
+  </message>
+  <message name="eFaturaKayitliKullaniciListele">
+    <part name="parameters" element="tns:eFaturaKayitliKullaniciListele" />
+  </message>
+  <message name="eFaturaKayitliKullaniciListeleResponse">
+    <part name="parameters" element="tns:eFaturaKayitliKullaniciListeleResponse" />
+  </message>
+  <message name="gelenBelgeXmlleriniAl">
+    <part name="parameters" element="tns:gelenBelgeXmlleriniAl" />
+  </message>
+  <message name="gelenBelgeXmlleriniAlResponse">
+    <part name="parameters" element="tns:gelenBelgeXmlleriniAlResponse" />
+  </message>
+  <message name="gelenBelgeXmlleriniAlExt">
+    <part name="parameters" element="tns:gelenBelgeXmlleriniAlExt" />
+  </message>
+  <message name="gelenBelgeXmlleriniAlExtResponse">
+    <part name="parameters" element="tns:gelenBelgeXmlleriniAlExtResponse" />
+  </message>
+  <message name="gelenBelgeleriIndirExt">
+    <part name="parameters" element="tns:gelenBelgeleriIndirExt" />
+  </message>
+  <message name="gelenBelgeleriIndirExtResponse">
+    <part name="parameters" element="tns:gelenBelgeleriIndirExtResponse" />
+  </message>
+  <message name="gelenBelgeleriIndir">
+    <part name="parameters" element="tns:gelenBelgeleriIndir" />
+  </message>
+  <message name="gelenBelgeleriIndirResponse">
+    <part name="parameters" element="tns:gelenBelgeleriIndirResponse" />
+  </message>
+  <message name="gidenBelgeleriIndir">
+    <part name="parameters" element="tns:gidenBelgeleriIndir" />
+  </message>
+  <message name="gidenBelgeleriIndirResponse">
+    <part name="parameters" element="tns:gidenBelgeleriIndirResponse" />
+  </message>
+  <message name="efaturaKullaniciBilgisi">
+    <part name="parameters" element="tns:efaturaKullaniciBilgisi" />
+  </message>
+  <message name="efaturaKullaniciBilgisiResponse">
+    <part name="parameters" element="tns:efaturaKullaniciBilgisiResponse" />
+  </message>
+  <message name="efaturaKullaniciListesi">
+    <part name="parameters" element="tns:efaturaKullaniciListesi" />
+  </message>
+  <message name="efaturaKullaniciListesiResponse">
+    <part name="parameters" element="tns:efaturaKullaniciListesiResponse" />
+  </message>
+  <message name="belgelerAlindi">
+    <part name="parameters" element="tns:belgelerAlindi" />
+  </message>
+  <message name="belgelerAlindiResponse">
+    <part name="parameters" element="tns:belgelerAlindiResponse" />
+  </message>
+  <message name="belgeleriTekrarGonder">
+    <part name="parameters" element="tns:belgeleriTekrarGonder" />
+  </message>
+  <message name="belgeleriTekrarGonderResponse">
+    <part name="parameters" element="tns:belgeleriTekrarGonderResponse" />
+  </message>
+  <message name="belgeleriTekrarGonderBelgeOid">
+    <part name="parameters" element="tns:belgeleriTekrarGonderBelgeOid" />
+  </message>
+  <message name="belgeleriTekrarGonderBelgeOidResponse">
+    <part name="parameters" element="tns:belgeleriTekrarGonderBelgeOidResponse" />
+  </message>
+  <message name="belgeleriTekrarGonderYerelBelgeNo">
+    <part name="parameters" element="tns:belgeleriTekrarGonderYerelBelgeNo" />
+  </message>
+  <message name="belgeleriTekrarGonderYerelBelgeNoResponse">
+    <part name="parameters" element="tns:belgeleriTekrarGonderYerelBelgeNoResponse" />
+  </message>
+  <message name="gidenBelgeleriIndirEttn">
+    <part name="parameters" element="tns:gidenBelgeleriIndirEttn" />
+  </message>
+  <message name="gidenBelgeleriIndirEttnResponse">
+    <part name="parameters" element="tns:gidenBelgeleriIndirEttnResponse" />
+  </message>
+  <message name="gelenFaturalariArsiveKaldir">
+    <part name="parameters" element="tns:gelenFaturalariArsiveKaldir" />
+  </message>
+  <message name="gelenFaturalariArsiveKaldirResponse">
+    <part name="parameters" element="tns:gelenFaturalariArsiveKaldirResponse" />
+  </message>
+  <message name="gidenFaturalariArsiveKaldir">
+    <part name="parameters" element="tns:gidenFaturalariArsiveKaldir" />
+  </message>
+  <message name="gidenFaturalariArsiveKaldirResponse">
+    <part name="parameters" element="tns:gidenFaturalariArsiveKaldirResponse" />
+  </message>
+  <message name="kontorBilgisiGetir">
+    <part name="parameters" element="tns:kontorBilgisiGetir" />
+  </message>
+  <message name="kontorBilgisiGetirResponse">
+    <part name="parameters" element="tns:kontorBilgisiGetirResponse" />
+  </message>
+  <message name="temelKontrollerIleBelgeGonder">
+    <part name="parameters" element="tns:temelKontrollerIleBelgeGonder" />
+  </message>
+  <message name="temelKontrollerIleBelgeGonderResponse">
+    <part name="parameters" element="tns:temelKontrollerIleBelgeGonderResponse" />
+  </message>
+  <message name="erpBilgileriBelirle">
+    <part name="parameters" element="tns:erpBilgileriBelirle" />
+  </message>
+  <message name="erpBilgileriBelirleResponse">
+    <part name="parameters" element="tns:erpBilgileriBelirleResponse" />
+  </message>
+  <portType name="ConnectorService">
+    <operation name="cokluGidenBelgeDurumSorgula">
+      <input xmlns:ns1="http://www.w3.org/2007/05/addressing/metadata" ns1:Action="http://service.connector.uut.cs.com.tr/ConnectorService/cokluGidenBelgeDurumSorgulaRequest" message="tns:cokluGidenBelgeDurumSorgula" />
+      <output xmlns:ns2="http://www.w3.org/2007/05/addressing/metadata" ns2:Action="http://service.connector.uut.cs.com.tr/ConnectorService/cokluGidenBelgeDurumSorgulaResponse" message="tns:cokluGidenBelgeDurumSorgulaResponse" />
+    </operation>
+    <operation name="gidenBelgeDurumSorgulaExt">
+      <input xmlns:ns3="http://www.w3.org/2007/05/addressing/metadata" ns3:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gidenBelgeDurumSorgulaExtRequest" message="tns:gidenBelgeDurumSorgulaExt" />
+      <output xmlns:ns4="http://www.w3.org/2007/05/addressing/metadata" ns4:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gidenBelgeDurumSorgulaExtResponse" message="tns:gidenBelgeDurumSorgulaExtResponse" />
+    </operation>
+    <operation name="gidenBelgeDurumSorgula">
+      <input xmlns:ns5="http://www.w3.org/2007/05/addressing/metadata" ns5:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gidenBelgeDurumSorgulaRequest" message="tns:gidenBelgeDurumSorgula" />
+      <output xmlns:ns6="http://www.w3.org/2007/05/addressing/metadata" ns6:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gidenBelgeDurumSorgulaResponse" message="tns:gidenBelgeDurumSorgulaResponse" />
+    </operation>
+    <operation name="gidenBelgeDurumSorgulaEttn">
+      <input xmlns:ns7="http://www.w3.org/2007/05/addressing/metadata" ns7:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gidenBelgeDurumSorgulaEttnRequest" message="tns:gidenBelgeDurumSorgulaEttn" />
+      <output xmlns:ns8="http://www.w3.org/2007/05/addressing/metadata" ns8:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gidenBelgeDurumSorgulaEttnResponse" message="tns:gidenBelgeDurumSorgulaEttnResponse" />
+    </operation>
+    <operation name="gidenBelgeDurumSorgulaYerelBelgeNo">
+      <input xmlns:ns9="http://www.w3.org/2007/05/addressing/metadata" ns9:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gidenBelgeDurumSorgulaYerelBelgeNoRequest" message="tns:gidenBelgeDurumSorgulaYerelBelgeNo" />
+      <output xmlns:ns10="http://www.w3.org/2007/05/addressing/metadata" ns10:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gidenBelgeDurumSorgulaYerelBelgeNoResponse" message="tns:gidenBelgeDurumSorgulaYerelBelgeNoResponse" />
+    </operation>
+    <operation name="gelenBelgeDurumSorgulaExt">
+      <input xmlns:ns11="http://www.w3.org/2007/05/addressing/metadata" ns11:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeDurumSorgulaExtRequest" message="tns:gelenBelgeDurumSorgulaExt" />
+      <output xmlns:ns12="http://www.w3.org/2007/05/addressing/metadata" ns12:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeDurumSorgulaExtResponse" message="tns:gelenBelgeDurumSorgulaExtResponse" />
+    </operation>
+    <operation name="gelenBelgeDurumSorgula">
+      <input xmlns:ns13="http://www.w3.org/2007/05/addressing/metadata" ns13:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeDurumSorgulaRequest" message="tns:gelenBelgeDurumSorgula" />
+      <output xmlns:ns14="http://www.w3.org/2007/05/addressing/metadata" ns14:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeDurumSorgulaResponse" message="tns:gelenBelgeDurumSorgulaResponse" />
+    </operation>
+    <operation name="gelenBelgeleriListeleExt">
+      <input xmlns:ns15="http://www.w3.org/2007/05/addressing/metadata" ns15:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeleriListeleExtRequest" message="tns:gelenBelgeleriListeleExt" />
+      <output xmlns:ns16="http://www.w3.org/2007/05/addressing/metadata" ns16:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeleriListeleExtResponse" message="tns:gelenBelgeleriListeleExtResponse" />
+      <fault xmlns:ns17="http://www.w3.org/2007/05/addressing/metadata" ns17:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeleriListeleExt/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="gelenBelgeleriListele">
+      <input xmlns:ns18="http://www.w3.org/2007/05/addressing/metadata" ns18:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeleriListeleRequest" message="tns:gelenBelgeleriListele" />
+      <output xmlns:ns19="http://www.w3.org/2007/05/addressing/metadata" ns19:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeleriListeleResponse" message="tns:gelenBelgeleriListeleResponse" />
+      <fault xmlns:ns20="http://www.w3.org/2007/05/addressing/metadata" ns20:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeleriListele/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="yereleAktarilacakBelgeleriAl">
+      <input xmlns:ns21="http://www.w3.org/2007/05/addressing/metadata" ns21:Action="http://service.connector.uut.cs.com.tr/ConnectorService/yereleAktarilacakBelgeleriAlRequest" message="tns:yereleAktarilacakBelgeleriAl" />
+      <output xmlns:ns22="http://www.w3.org/2007/05/addressing/metadata" ns22:Action="http://service.connector.uut.cs.com.tr/ConnectorService/yereleAktarilacakBelgeleriAlResponse" message="tns:yereleAktarilacakBelgeleriAlResponse" />
+    </operation>
+    <operation name="yereleAktarilacakBelgeleriAlExt">
+      <input xmlns:ns23="http://www.w3.org/2007/05/addressing/metadata" ns23:Action="http://service.connector.uut.cs.com.tr/ConnectorService/yereleAktarilacakBelgeleriAlExtRequest" message="tns:yereleAktarilacakBelgeleriAlExt" />
+      <output xmlns:ns24="http://www.w3.org/2007/05/addressing/metadata" ns24:Action="http://service.connector.uut.cs.com.tr/ConnectorService/yereleAktarilacakBelgeleriAlExtResponse" message="tns:yereleAktarilacakBelgeleriAlExtResponse" />
+    </operation>
+    <operation name="gelenBelgeleriAlExt">
+      <input xmlns:ns25="http://www.w3.org/2007/05/addressing/metadata" ns25:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeleriAlExtRequest" message="tns:gelenBelgeleriAlExt" />
+      <output xmlns:ns26="http://www.w3.org/2007/05/addressing/metadata" ns26:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeleriAlExtResponse" message="tns:gelenBelgeleriAlExtResponse" />
+    </operation>
+    <operation name="gelenBelgeleriAlExt2">
+      <input xmlns:ns27="http://www.w3.org/2007/05/addressing/metadata" ns27:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeleriAlExt2Request" message="tns:gelenBelgeleriAlExt2" />
+      <output xmlns:ns28="http://www.w3.org/2007/05/addressing/metadata" ns28:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeleriAlExt2Response" message="tns:gelenBelgeleriAlExt2Response" />
+    </operation>
+    <operation name="gelenBelgeleriAl">
+      <input xmlns:ns29="http://www.w3.org/2007/05/addressing/metadata" ns29:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeleriAlRequest" message="tns:gelenBelgeleriAl" />
+      <output xmlns:ns30="http://www.w3.org/2007/05/addressing/metadata" ns30:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeleriAlResponse" message="tns:gelenBelgeleriAlResponse" />
+    </operation>
+    <operation name="belgeGonderExt">
+      <input xmlns:ns31="http://www.w3.org/2007/05/addressing/metadata" ns31:Action="http://service.connector.uut.cs.com.tr/ConnectorService/belgeGonderExtRequest" message="tns:belgeGonderExt" />
+      <output xmlns:ns32="http://www.w3.org/2007/05/addressing/metadata" ns32:Action="http://service.connector.uut.cs.com.tr/ConnectorService/belgeGonderExtResponse" message="tns:belgeGonderExtResponse" />
+    </operation>
+    <operation name="belgeGonder">
+      <input xmlns:ns33="http://www.w3.org/2007/05/addressing/metadata" ns33:Action="http://service.connector.uut.cs.com.tr/ConnectorService/belgeGonderRequest" message="tns:belgeGonder" />
+      <output xmlns:ns34="http://www.w3.org/2007/05/addressing/metadata" ns34:Action="http://service.connector.uut.cs.com.tr/ConnectorService/belgeGonderResponse" message="tns:belgeGonderResponse" />
+    </operation>
+    <operation name="efaturaKullanicisi">
+      <input xmlns:ns35="http://www.w3.org/2007/05/addressing/metadata" ns35:Action="http://service.connector.uut.cs.com.tr/ConnectorService/efaturaKullanicisiRequest" message="tns:efaturaKullanicisi" />
+      <output xmlns:ns36="http://www.w3.org/2007/05/addressing/metadata" ns36:Action="http://service.connector.uut.cs.com.tr/ConnectorService/efaturaKullanicisiResponse" message="tns:efaturaKullanicisiResponse" />
+    </operation>
+    <operation name="eFaturaKayitliKullaniciListele">
+      <input xmlns:ns37="http://www.w3.org/2007/05/addressing/metadata" ns37:Action="http://service.connector.uut.cs.com.tr/ConnectorService/eFaturaKayitliKullaniciListeleRequest" message="tns:eFaturaKayitliKullaniciListele" />
+      <output xmlns:ns38="http://www.w3.org/2007/05/addressing/metadata" ns38:Action="http://service.connector.uut.cs.com.tr/ConnectorService/eFaturaKayitliKullaniciListeleResponse" message="tns:eFaturaKayitliKullaniciListeleResponse" />
+    </operation>
+    <operation name="gelenBelgeXmlleriniAl">
+      <input xmlns:ns39="http://www.w3.org/2007/05/addressing/metadata" ns39:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeXmlleriniAlRequest" message="tns:gelenBelgeXmlleriniAl" />
+      <output xmlns:ns40="http://www.w3.org/2007/05/addressing/metadata" ns40:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeXmlleriniAlResponse" message="tns:gelenBelgeXmlleriniAlResponse" />
+    </operation>
+    <operation name="gelenBelgeXmlleriniAlExt">
+      <input xmlns:ns41="http://www.w3.org/2007/05/addressing/metadata" ns41:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeXmlleriniAlExtRequest" message="tns:gelenBelgeXmlleriniAlExt" />
+      <output xmlns:ns42="http://www.w3.org/2007/05/addressing/metadata" ns42:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeXmlleriniAlExtResponse" message="tns:gelenBelgeXmlleriniAlExtResponse" />
+    </operation>
+    <operation name="gelenBelgeleriIndirExt">
+      <input xmlns:ns43="http://www.w3.org/2007/05/addressing/metadata" ns43:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeleriIndirExtRequest" message="tns:gelenBelgeleriIndirExt" />
+      <output xmlns:ns44="http://www.w3.org/2007/05/addressing/metadata" ns44:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeleriIndirExtResponse" message="tns:gelenBelgeleriIndirExtResponse" />
+      <fault xmlns:ns45="http://www.w3.org/2007/05/addressing/metadata" ns45:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeleriIndirExt/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="gelenBelgeleriIndir">
+      <input xmlns:ns46="http://www.w3.org/2007/05/addressing/metadata" ns46:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeleriIndirRequest" message="tns:gelenBelgeleriIndir" />
+      <output xmlns:ns47="http://www.w3.org/2007/05/addressing/metadata" ns47:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeleriIndirResponse" message="tns:gelenBelgeleriIndirResponse" />
+      <fault xmlns:ns48="http://www.w3.org/2007/05/addressing/metadata" ns48:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenBelgeleriIndir/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="gidenBelgeleriIndir">
+      <input xmlns:ns49="http://www.w3.org/2007/05/addressing/metadata" ns49:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gidenBelgeleriIndirRequest" message="tns:gidenBelgeleriIndir" />
+      <output xmlns:ns50="http://www.w3.org/2007/05/addressing/metadata" ns50:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gidenBelgeleriIndirResponse" message="tns:gidenBelgeleriIndirResponse" />
+      <fault xmlns:ns51="http://www.w3.org/2007/05/addressing/metadata" ns51:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gidenBelgeleriIndir/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="efaturaKullaniciBilgisi">
+      <input xmlns:ns52="http://www.w3.org/2007/05/addressing/metadata" ns52:Action="http://service.connector.uut.cs.com.tr/ConnectorService/efaturaKullaniciBilgisiRequest" message="tns:efaturaKullaniciBilgisi" />
+      <output xmlns:ns53="http://www.w3.org/2007/05/addressing/metadata" ns53:Action="http://service.connector.uut.cs.com.tr/ConnectorService/efaturaKullaniciBilgisiResponse" message="tns:efaturaKullaniciBilgisiResponse" />
+      <fault xmlns:ns54="http://www.w3.org/2007/05/addressing/metadata" ns54:Action="http://service.connector.uut.cs.com.tr/ConnectorService/efaturaKullaniciBilgisi/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="efaturaKullaniciListesi">
+      <input xmlns:ns55="http://www.w3.org/2007/05/addressing/metadata" ns55:Action="http://service.connector.uut.cs.com.tr/ConnectorService/efaturaKullaniciListesiRequest" message="tns:efaturaKullaniciListesi" />
+      <output xmlns:ns56="http://www.w3.org/2007/05/addressing/metadata" ns56:Action="http://service.connector.uut.cs.com.tr/ConnectorService/efaturaKullaniciListesiResponse" message="tns:efaturaKullaniciListesiResponse" />
+      <fault xmlns:ns57="http://www.w3.org/2007/05/addressing/metadata" ns57:Action="http://service.connector.uut.cs.com.tr/ConnectorService/efaturaKullaniciListesi/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="belgelerAlindi">
+      <input xmlns:ns58="http://www.w3.org/2007/05/addressing/metadata" ns58:Action="http://service.connector.uut.cs.com.tr/ConnectorService/belgelerAlindiRequest" message="tns:belgelerAlindi" />
+      <output xmlns:ns59="http://www.w3.org/2007/05/addressing/metadata" ns59:Action="http://service.connector.uut.cs.com.tr/ConnectorService/belgelerAlindiResponse" message="tns:belgelerAlindiResponse" />
+      <fault xmlns:ns60="http://www.w3.org/2007/05/addressing/metadata" ns60:Action="http://service.connector.uut.cs.com.tr/ConnectorService/belgelerAlindi/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="belgeleriTekrarGonder">
+      <input xmlns:ns61="http://www.w3.org/2007/05/addressing/metadata" ns61:Action="http://service.connector.uut.cs.com.tr/ConnectorService/belgeleriTekrarGonderRequest" message="tns:belgeleriTekrarGonder" />
+      <output xmlns:ns62="http://www.w3.org/2007/05/addressing/metadata" ns62:Action="http://service.connector.uut.cs.com.tr/ConnectorService/belgeleriTekrarGonderResponse" message="tns:belgeleriTekrarGonderResponse" />
+      <fault xmlns:ns63="http://www.w3.org/2007/05/addressing/metadata" ns63:Action="http://service.connector.uut.cs.com.tr/ConnectorService/belgeleriTekrarGonder/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="belgeleriTekrarGonderBelgeOid">
+      <input xmlns:ns64="http://www.w3.org/2007/05/addressing/metadata" ns64:Action="http://service.connector.uut.cs.com.tr/ConnectorService/belgeleriTekrarGonderBelgeOidRequest" message="tns:belgeleriTekrarGonderBelgeOid" />
+      <output xmlns:ns65="http://www.w3.org/2007/05/addressing/metadata" ns65:Action="http://service.connector.uut.cs.com.tr/ConnectorService/belgeleriTekrarGonderBelgeOidResponse" message="tns:belgeleriTekrarGonderBelgeOidResponse" />
+      <fault xmlns:ns66="http://www.w3.org/2007/05/addressing/metadata" ns66:Action="http://service.connector.uut.cs.com.tr/ConnectorService/belgeleriTekrarGonderBelgeOid/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="belgeleriTekrarGonderYerelBelgeNo">
+      <input xmlns:ns67="http://www.w3.org/2007/05/addressing/metadata" ns67:Action="http://service.connector.uut.cs.com.tr/ConnectorService/belgeleriTekrarGonderYerelBelgeNoRequest" message="tns:belgeleriTekrarGonderYerelBelgeNo" />
+      <output xmlns:ns68="http://www.w3.org/2007/05/addressing/metadata" ns68:Action="http://service.connector.uut.cs.com.tr/ConnectorService/belgeleriTekrarGonderYerelBelgeNoResponse" message="tns:belgeleriTekrarGonderYerelBelgeNoResponse" />
+      <fault xmlns:ns69="http://www.w3.org/2007/05/addressing/metadata" ns69:Action="http://service.connector.uut.cs.com.tr/ConnectorService/belgeleriTekrarGonderYerelBelgeNo/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="gidenBelgeleriIndirEttn">
+      <input xmlns:ns70="http://www.w3.org/2007/05/addressing/metadata" ns70:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gidenBelgeleriIndirEttnRequest" message="tns:gidenBelgeleriIndirEttn" />
+      <output xmlns:ns71="http://www.w3.org/2007/05/addressing/metadata" ns71:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gidenBelgeleriIndirEttnResponse" message="tns:gidenBelgeleriIndirEttnResponse" />
+      <fault xmlns:ns72="http://www.w3.org/2007/05/addressing/metadata" ns72:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gidenBelgeleriIndirEttn/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="gelenFaturalariArsiveKaldir">
+      <input xmlns:ns73="http://www.w3.org/2007/05/addressing/metadata" ns73:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenFaturalariArsiveKaldirRequest" message="tns:gelenFaturalariArsiveKaldir" />
+      <output xmlns:ns74="http://www.w3.org/2007/05/addressing/metadata" ns74:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gelenFaturalariArsiveKaldirResponse" message="tns:gelenFaturalariArsiveKaldirResponse" />
+    </operation>
+    <operation name="gidenFaturalariArsiveKaldir">
+      <input xmlns:ns75="http://www.w3.org/2007/05/addressing/metadata" ns75:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gidenFaturalariArsiveKaldirRequest" message="tns:gidenFaturalariArsiveKaldir" />
+      <output xmlns:ns76="http://www.w3.org/2007/05/addressing/metadata" ns76:Action="http://service.connector.uut.cs.com.tr/ConnectorService/gidenFaturalariArsiveKaldirResponse" message="tns:gidenFaturalariArsiveKaldirResponse" />
+    </operation>
+    <operation name="kontorBilgisiGetir">
+      <input xmlns:ns77="http://www.w3.org/2007/05/addressing/metadata" ns77:Action="http://service.connector.uut.cs.com.tr/ConnectorService/kontorBilgisiGetirRequest" message="tns:kontorBilgisiGetir" />
+      <output xmlns:ns78="http://www.w3.org/2007/05/addressing/metadata" ns78:Action="http://service.connector.uut.cs.com.tr/ConnectorService/kontorBilgisiGetirResponse" message="tns:kontorBilgisiGetirResponse" />
+    </operation>
+    <operation name="temelKontrollerIleBelgeGonder">
+      <input xmlns:ns79="http://www.w3.org/2007/05/addressing/metadata" ns79:Action="http://service.connector.uut.cs.com.tr/ConnectorService/temelKontrollerIleBelgeGonderRequest" message="tns:temelKontrollerIleBelgeGonder" />
+      <output xmlns:ns80="http://www.w3.org/2007/05/addressing/metadata" ns80:Action="http://service.connector.uut.cs.com.tr/ConnectorService/temelKontrollerIleBelgeGonderResponse" message="tns:temelKontrollerIleBelgeGonderResponse" />
+    </operation>
+    <operation name="erpBilgileriBelirle">
+      <input xmlns:ns81="http://www.w3.org/2007/05/addressing/metadata" ns81:Action="http://service.connector.uut.cs.com.tr/ConnectorService/erpBilgileriBelirleRequest" message="tns:erpBilgileriBelirle" />
+      <output xmlns:ns82="http://www.w3.org/2007/05/addressing/metadata" ns82:Action="http://service.connector.uut.cs.com.tr/ConnectorService/erpBilgileriBelirleResponse" message="tns:erpBilgileriBelirleResponse" />
+    </operation>
+  </portType>
+</definitions>

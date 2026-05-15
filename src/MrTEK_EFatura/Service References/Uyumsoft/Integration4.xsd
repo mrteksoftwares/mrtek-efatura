@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://earsiv.efatura.gov.tr" elementFormDefault="qualified" targetNamespace="http://earsiv.efatura.gov.tr" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="eArsivRaporuFaturaVergiBilgisiTevkifatTevkifatKodu">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="301" />
+      <xs:enumeration value="302" />
+      <xs:enumeration value="303" />
+      <xs:enumeration value="304" />
+      <xs:enumeration value="305" />
+      <xs:enumeration value="306" />
+      <xs:enumeration value="308" />
+      <xs:enumeration value="309" />
+      <xs:enumeration value="310" />
+      <xs:enumeration value="311" />
+      <xs:enumeration value="312" />
+      <xs:enumeration value="313" />
+      <xs:enumeration value="314" />
+      <xs:enumeration value="315" />
+      <xs:enumeration value="316" />
+      <xs:enumeration value="317" />
+      <xs:enumeration value="318" />
+      <xs:enumeration value="319" />
+      <xs:enumeration value="320" />
+      <xs:enumeration value="321" />
+      <xs:enumeration value="350" />
+      <xs:enumeration value="601" />
+      <xs:enumeration value="602" />
+      <xs:enumeration value="603" />
+      <xs:enumeration value="604" />
+      <xs:enumeration value="605" />
+      <xs:enumeration value="606" />
+      <xs:enumeration value="607" />
+      <xs:enumeration value="608" />
+      <xs:enumeration value="609" />
+      <xs:enumeration value="610" />
+      <xs:enumeration value="611" />
+      <xs:enumeration value="612" />
+      <xs:enumeration value="613" />
+      <xs:enumeration value="614" />
+      <xs:enumeration value="615" />
+      <xs:enumeration value="616" />
+      <xs:enumeration value="617" />
+      <xs:enumeration value="618" />
+      <xs:enumeration value="619" />
+      <xs:enumeration value="620" />
+      <xs:enumeration value="621" />
+      <xs:enumeration value="622" />
+      <xs:enumeration value="623" />
+      <xs:enumeration value="650" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

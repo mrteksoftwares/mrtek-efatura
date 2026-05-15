@@ -1,0 +1,15 @@
+<h1 align="center">
+                      <span style="font-weight:bold; ">
+
+												<xsl:choose>
+                          <xsl:when test="n1:Invoice/cbc:ProfileID='EARSIVFATURA'">
+                           <xsl:text>e-Arşiv Fatura</xsl:text>
+                          </xsl:when>
+                          <xsl:otherwise>
+                           <xsl:text>e-FATURA</xsl:text>
+                          </xsl:otherwise>
+                        </xsl:choose>
+                        
+
+                      </span>
+                    </h1>

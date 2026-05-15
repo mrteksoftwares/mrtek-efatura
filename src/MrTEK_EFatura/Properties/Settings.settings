@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MrTEK_EFatura.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MrTEK_EFatura_FinansbankUser_userService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://178.251.43.49:8080/efatura/ws/userService</Value>
+    </Setting>
+    <Setting Name="MrTEK_EFatura_FinansbankConn_connectorService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://178.251.43.49:8080/efatura/ws/connectorService</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

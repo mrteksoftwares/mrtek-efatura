@@ -1,0 +1,946 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="tbInvoice.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>291, 17</value>
+  </metadata>
+  <metadata name="FirmConn.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>172, 17</value>
+  </metadata>
+  <metadata name="sqlCommand4.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand4.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand2.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand2.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlCommand2.CommandText" xml:space="preserve">
+    <value>INSERT INTO Invoice (
+Deleted , CreatedBy , CreatedDate , ModifiedBy , ModifiedDate , IOType , IntCode
+ , LocalStatus , IntegratorID , Status , StatusDescription , PostBox , XsltNo , ProfileID
+ , ID , UUID , IssueDate , IssueTime , InvoiceTypeCode , DocumentCurrencyCode , TaxCurrencyCode
+ , PricingCurrencyCode , PaymentCurrencyCode , PaymentAlternativeCurrencyCode , LineCountNumeric , InvoicePeriod_StartDate , InvoicePeriod_EndDate , ASP_PartyIdentification1_schemeID
+ , ASP_PartyIdentification1_ID , ASP_PartyIdentification2_schemeID , ASP_PartyIdentification2_ID , ASP_PartyIdentification3_schemeID , ASP_PartyIdentification3_ID , ASP_PartyIdentification4_schemeID , ASP_PartyIdentification4_ID
+ , ASP_PartyIdentification5_schemeID , ASP_PartyIdentification5_ID , ASP_PartyName , ASP_PostalAddress_StreetName , ASP_PostalAddress_Room , ASP_PostalAddress_BuildingNumber , ASP_PostalAddress_BuildingName
+ , ASP_PostalAddress_CitySubdivisionName , ASP_PostalAddress_CityName , ASP_PostalAddress_Country , ASP_PartyTaxSchemeName , ASP_PartyTaxSchemeTaxTypeCode , ASP_WebsiteURI , ASP_Contact_Telephone
+ , ASP_Contact_Telefax , ASP_Contact_ElectronicMail , ASP_Person_FirstName , ASP_Person_FamilyName , ASP_Person_MiddleName , ASP_Person_NameSuffix , ASP_Person_Title
+ , ASP_AgentParty_PartyIdentification1_schemeID , ASP_AgentParty_PartyIdentification1_ID , ASP_AgentParty_PartyIdentification2_schemeID , ASP_AgentParty_PartyIdentification2_ID , ASP_AgentParty_PartyIdentification3_schemeID , ASP_AgentParty_PartyIdentification3_ID , ASP_AgentParty_PartyIdentification4_schemeID
+ , ASP_AgentParty_PartyIdentification4_ID , ASP_AgentParty_PartyIdentification5_schemeID , ASP_AgentParty_PartyIdentification5_ID , ASP_AgentParty_PartyName , ASP_AgentParty_PostalAddress_StreetName , ASP_AgentParty_PostalAddress_Room , ASP_AgentParty_PostalAddress_BuildingNumber
+ , ASP_AgentParty_PostalAddress_BuildingName , ASP_AgentParty_PostalAddress_CitySubdivisionName , ASP_AgentParty_PostalAddress_CityName , ASP_AgentParty_PostalAddress_Country , ASP_AgentParty_PartyTaxSchemeName , ASP_AgentParty_PartyTaxSchemeTaxTypeCode , ASP_AgentParty_WebsiteURI
+ , ASP_AgentParty_Contact_Telephone , ASP_AgentParty_Contact_Telefax , ASP_AgentParty_Contact_ElectronicMail , ASP_AgentParty_Person_FirstName , ASP_AgentParty_Person_FamilyName , ASP_AgentParty_Person_MiddleName , ASP_AgentParty_Person_NameSuffix
+ , ASP_AgentParty_Person_Title , ACP_PartyIdentification1_schemeID , ACP_PartyIdentification1_ID , ACP_PartyIdentification2_schemeID , ACP_PartyIdentification2_ID , ACP_PartyIdentification3_schemeID , ACP_PartyIdentification3_ID
+ , ACP_PartyIdentification4_schemeID , ACP_PartyIdentification4_ID , ACP_PartyIdentification5_schemeID , ACP_PartyIdentification5_ID , ACP_PartyName , ACP_PostalAddress_StreetName , ACP_PostalAddress_Room
+ , ACP_PostalAddress_BuildingNumber , ACP_PostalAddress_BuildingName , ACP_PostalAddress_CitySubdivisionName , ACP_PostalAddress_CityName , ACP_PostalAddress_Country , ACP_PartyTaxSchemeName , ACP_PartyTaxSchemeTaxTypeCode
+ , ACP_WebsiteURI , ACP_Contact_Telephone , ACP_Contact_Telefax , ACP_Contact_ElectronicMail , ACP_Person_FirstName , ACP_Person_FamilyName , ACP_Person_MiddleName
+ , ACP_Person_NameSuffix , ACP_Person_Title , ACP_AgentParty_PartyIdentification1_schemeID , ACP_AgentParty_PartyIdentification1_ID , ACP_AgentParty_PartyIdentification2_schemeID , ACP_AgentParty_PartyIdentification2_ID , ACP_AgentParty_PartyIdentification3_schemeID
+ , ACP_AgentParty_PartyIdentification3_ID , ACP_AgentParty_PartyIdentification4_schemeID , ACP_AgentParty_PartyIdentification4_ID , ACP_AgentParty_PartyIdentification5_schemeID , ACP_AgentParty_PartyIdentification5_ID , ACP_AgentParty_PartyName , ACP_AgentParty_PostalAddress_StreetName
+ , ACP_AgentParty_PostalAddress_Room , ACP_AgentParty_PostalAddress_BuildingNumber , ACP_AgentParty_PostalAddress_BuildingName , ACP_AgentParty_PostalAddress_CitySubdivisionName , ACP_AgentParty_PostalAddress_CityName , ACP_AgentParty_PostalAddress_Country , ACP_AgentParty_PartyTaxSchemeName
+ , ACP_AgentParty_PartyTaxSchemeTaxTypeCode , ACP_AgentParty_WebsiteURI , ACP_AgentParty_Contact_Telephone , ACP_AgentParty_Contact_Telefax , ACP_AgentParty_Contact_ElectronicMail , ACP_AgentParty_Person_FirstName , ACP_AgentParty_Person_FamilyName
+ , ACP_AgentParty_Person_MiddleName , ACP_AgentParty_Person_NameSuffix , ACP_AgentParty_Person_Title , TaxExchangeRate_SourceCurrencyCode , TaxExchangeRate_TargetCurrencyCode , TaxExchangeRate_CalculationRate , TaxExchangeRate_Date
+ , PricingExchangeRate_SourceCurrencyCode , PricingExchangeRate_TargetCurrencyCode , PricingExchangeRate_CalculationRate , PricingExchangeRate_Date , PaymentExchangeRate_SourceCurrencyCode , PaymentExchangeRate_TargetCurrencyCode , PaymentExchangeRate_CalculationRate
+ , PaymentExchangeRate_Date , PaymentAlternativeExchangeRate_SourceCurrencyCode , PaymentAlternativeExchangeRate_TargetCurrencyCode , PaymentAlternativeExchangeRate_CalculationRate , PaymentAlternativeExchangeRate_Date , TaxAmount , LegalMonetaryTotal_LineExtensionAmount
+ , LegalMonetaryTotal_TaxExclusiveAmount , LegalMonetaryTotal_TaxInclusiveAmount , LegalMonetaryTotal_AllowanceTotalAmount , LegalMonetaryTotal_ChargeTotalAmount , LegalMonetaryTotal_PayableRoundingAmount , LegalMonetaryTotal_PayableAmount)
+ VALUES (
+@Deleted , @CreatedBy , GETDATE() , @ModifiedBy , GETDATE() , @IOType , @IntCode
+ , @LocalStatus , @IntegratorID , @Status , @StatusDescription , @PostBox , @XsltNo , @ProfileID
+ , @ID , @UUID , @IssueDate , @IssueTime , @InvoiceTypeCode , @DocumentCurrencyCode , @TaxCurrencyCode
+ , @PricingCurrencyCode , @PaymentCurrencyCode , @PaymentAlternativeCurrencyCode , @LineCountNumeric , @InvoicePeriod_StartDate , @InvoicePeriod_EndDate , @ASP_PartyIdentification1_schemeID
+ , @ASP_PartyIdentification1_ID , @ASP_PartyIdentification2_schemeID , @ASP_PartyIdentification2_ID , @ASP_PartyIdentification3_schemeID , @ASP_PartyIdentification3_ID , @ASP_PartyIdentification4_schemeID , @ASP_PartyIdentification4_ID
+ , @ASP_PartyIdentification5_schemeID , @ASP_PartyIdentification5_ID , @ASP_PartyName , @ASP_PostalAddress_StreetName , @ASP_PostalAddress_Room , @ASP_PostalAddress_BuildingNumber , @ASP_PostalAddress_BuildingName
+ , @ASP_PostalAddress_CitySubdivisionName , @ASP_PostalAddress_CityName , @ASP_PostalAddress_Country , @ASP_PartyTaxSchemeName , @ASP_PartyTaxSchemeTaxTypeCode , @ASP_WebsiteURI , @ASP_Contact_Telephone
+ , @ASP_Contact_Telefax , @ASP_Contact_ElectronicMail , @ASP_Person_FirstName , @ASP_Person_FamilyName , @ASP_Person_MiddleName , @ASP_Person_NameSuffix , @ASP_Person_Title
+ , @ASP_AgentParty_PartyIdentification1_schemeID , @ASP_AgentParty_PartyIdentification1_ID , @ASP_AgentParty_PartyIdentification2_schemeID , @ASP_AgentParty_PartyIdentification2_ID , @ASP_AgentParty_PartyIdentification3_schemeID , @ASP_AgentParty_PartyIdentification3_ID , @ASP_AgentParty_PartyIdentification4_schemeID
+ , @ASP_AgentParty_PartyIdentification4_ID , @ASP_AgentParty_PartyIdentification5_schemeID , @ASP_AgentParty_PartyIdentification5_ID , @ASP_AgentParty_PartyName , @ASP_AgentParty_PostalAddress_StreetName , @ASP_AgentParty_PostalAddress_Room , @ASP_AgentParty_PostalAddress_BuildingNumber
+ , @ASP_AgentParty_PostalAddress_BuildingName , @ASP_AgentParty_PostalAddress_CitySubdivisionName , @ASP_AgentParty_PostalAddress_CityName , @ASP_AgentParty_PostalAddress_Country , @ASP_AgentParty_PartyTaxSchemeName , @ASP_AgentParty_PartyTaxSchemeTaxTypeCode , @ASP_AgentParty_WebsiteURI
+ , @ASP_AgentParty_Contact_Telephone , @ASP_AgentParty_Contact_Telefax , @ASP_AgentParty_Contact_ElectronicMail , @ASP_AgentParty_Person_FirstName , @ASP_AgentParty_Person_FamilyName , @ASP_AgentParty_Person_MiddleName , @ASP_AgentParty_Person_NameSuffix
+ , @ASP_AgentParty_Person_Title , @ACP_PartyIdentification1_schemeID , @ACP_PartyIdentification1_ID , @ACP_PartyIdentification2_schemeID , @ACP_PartyIdentification2_ID , @ACP_PartyIdentification3_schemeID , @ACP_PartyIdentification3_ID
+ , @ACP_PartyIdentification4_schemeID , @ACP_PartyIdentification4_ID , @ACP_PartyIdentification5_schemeID , @ACP_PartyIdentification5_ID , @ACP_PartyName , @ACP_PostalAddress_StreetName , @ACP_PostalAddress_Room
+ , @ACP_PostalAddress_BuildingNumber , @ACP_PostalAddress_BuildingName , @ACP_PostalAddress_CitySubdivisionName , @ACP_PostalAddress_CityName , @ACP_PostalAddress_Country , @ACP_PartyTaxSchemeName , @ACP_PartyTaxSchemeTaxTypeCode
+ , @ACP_WebsiteURI , @ACP_Contact_Telephone , @ACP_Contact_Telefax , @ACP_Contact_ElectronicMail , @ACP_Person_FirstName , @ACP_Person_FamilyName , @ACP_Person_MiddleName
+ , @ACP_Person_NameSuffix , @ACP_Person_Title , @ACP_AgentParty_PartyIdentification1_schemeID , @ACP_AgentParty_PartyIdentification1_ID , @ACP_AgentParty_PartyIdentification2_schemeID , @ACP_AgentParty_PartyIdentification2_ID , @ACP_AgentParty_PartyIdentification3_schemeID
+ , @ACP_AgentParty_PartyIdentification3_ID , @ACP_AgentParty_PartyIdentification4_schemeID , @ACP_AgentParty_PartyIdentification4_ID , @ACP_AgentParty_PartyIdentification5_schemeID , @ACP_AgentParty_PartyIdentification5_ID , @ACP_AgentParty_PartyName , @ACP_AgentParty_PostalAddress_StreetName
+ , @ACP_AgentParty_PostalAddress_Room , @ACP_AgentParty_PostalAddress_BuildingNumber , @ACP_AgentParty_PostalAddress_BuildingName , @ACP_AgentParty_PostalAddress_CitySubdivisionName , @ACP_AgentParty_PostalAddress_CityName , @ACP_AgentParty_PostalAddress_Country , @ACP_AgentParty_PartyTaxSchemeName
+ , @ACP_AgentParty_PartyTaxSchemeTaxTypeCode , @ACP_AgentParty_WebsiteURI , @ACP_AgentParty_Contact_Telephone , @ACP_AgentParty_Contact_Telefax , @ACP_AgentParty_Contact_ElectronicMail , @ACP_AgentParty_Person_FirstName , @ACP_AgentParty_Person_FamilyName
+ , @ACP_AgentParty_Person_MiddleName , @ACP_AgentParty_Person_NameSuffix , @ACP_AgentParty_Person_Title , @TaxExchangeRate_SourceCurrencyCode , @TaxExchangeRate_TargetCurrencyCode , @TaxExchangeRate_CalculationRate , @TaxExchangeRate_Date
+ , @PricingExchangeRate_SourceCurrencyCode , @PricingExchangeRate_TargetCurrencyCode , @PricingExchangeRate_CalculationRate , @PricingExchangeRate_Date , @PaymentExchangeRate_SourceCurrencyCode , @PaymentExchangeRate_TargetCurrencyCode , @PaymentExchangeRate_CalculationRate
+ , @PaymentExchangeRate_Date , @PaymentAlternativeExchangeRate_SourceCurrencyCode , @PaymentAlternativeExchangeRate_TargetCurrencyCode , @PaymentAlternativeExchangeRate_CalculationRate , @PaymentAlternativeExchangeRate_Date , @TaxAmount , @LegalMonetaryTotal_LineExtensionAmount
+ , @LegalMonetaryTotal_TaxExclusiveAmount , @LegalMonetaryTotal_TaxInclusiveAmount , @LegalMonetaryTotal_AllowanceTotalAmount , @LegalMonetaryTotal_ChargeTotalAmount , @LegalMonetaryTotal_PayableRoundingAmount , @LegalMonetaryTotal_PayableAmount)
+SELECT @PRIMARYFIELD_InvoiceID = SCOPE_IDENTITY() 
+</value>
+  </data>
+  <metadata name="sqlCommand1.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand1.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand3.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand3.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlCommand3.CommandText" xml:space="preserve">
+    <value>UPDATE Invoice SET 
+Deleted = @Deleted , ModifiedBy = @ModifiedBy , ModifiedDate = GETDATE() , IOType = @IOType , IntCode = @IntCode
+ , LocalStatus = @LocalStatus , IntegratorID = @IntegratorID , Status = @Status , StatusDescription = @StatusDescription , PostBox = @PostBox , XsltNo = @XsltNo , ProfileID = @ProfileID
+ , ID = @ID , UUID = @UUID , IssueDate = @IssueDate , IssueTime = @IssueTime , InvoiceTypeCode = @InvoiceTypeCode , DocumentCurrencyCode = @DocumentCurrencyCode , TaxCurrencyCode = @TaxCurrencyCode
+ , PricingCurrencyCode = @PricingCurrencyCode , PaymentCurrencyCode = @PaymentCurrencyCode , PaymentAlternativeCurrencyCode = @PaymentAlternativeCurrencyCode , LineCountNumeric = @LineCountNumeric , InvoicePeriod_StartDate = @InvoicePeriod_StartDate , InvoicePeriod_EndDate = @InvoicePeriod_EndDate , ASP_PartyIdentification1_schemeID = @ASP_PartyIdentification1_schemeID
+ , ASP_PartyIdentification1_ID = @ASP_PartyIdentification1_ID , ASP_PartyIdentification2_schemeID = @ASP_PartyIdentification2_schemeID , ASP_PartyIdentification2_ID = @ASP_PartyIdentification2_ID , ASP_PartyIdentification3_schemeID = @ASP_PartyIdentification3_schemeID , ASP_PartyIdentification3_ID = @ASP_PartyIdentification3_ID , ASP_PartyIdentification4_schemeID = @ASP_PartyIdentification4_schemeID , ASP_PartyIdentification4_ID = @ASP_PartyIdentification4_ID
+ , ASP_PartyIdentification5_schemeID = @ASP_PartyIdentification5_schemeID , ASP_PartyIdentification5_ID = @ASP_PartyIdentification5_ID , ASP_PartyName = @ASP_PartyName , ASP_PostalAddress_StreetName = @ASP_PostalAddress_StreetName , ASP_PostalAddress_Room = @ASP_PostalAddress_Room , ASP_PostalAddress_BuildingNumber = @ASP_PostalAddress_BuildingNumber , ASP_PostalAddress_BuildingName = @ASP_PostalAddress_BuildingName
+ , ASP_PostalAddress_CitySubdivisionName = @ASP_PostalAddress_CitySubdivisionName , ASP_PostalAddress_CityName = @ASP_PostalAddress_CityName , ASP_PostalAddress_Country = @ASP_PostalAddress_Country , ASP_PartyTaxSchemeName = @ASP_PartyTaxSchemeName , ASP_PartyTaxSchemeTaxTypeCode = @ASP_PartyTaxSchemeTaxTypeCode , ASP_WebsiteURI = @ASP_WebsiteURI , ASP_Contact_Telephone = @ASP_Contact_Telephone
+ , ASP_Contact_Telefax = @ASP_Contact_Telefax , ASP_Contact_ElectronicMail = @ASP_Contact_ElectronicMail , ASP_Person_FirstName = @ASP_Person_FirstName , ASP_Person_FamilyName = @ASP_Person_FamilyName , ASP_Person_MiddleName = @ASP_Person_MiddleName , ASP_Person_NameSuffix = @ASP_Person_NameSuffix , ASP_Person_Title = @ASP_Person_Title
+ , ASP_AgentParty_PartyIdentification1_schemeID = @ASP_AgentParty_PartyIdentification1_schemeID , ASP_AgentParty_PartyIdentification1_ID = @ASP_AgentParty_PartyIdentification1_ID , ASP_AgentParty_PartyIdentification2_schemeID = @ASP_AgentParty_PartyIdentification2_schemeID , ASP_AgentParty_PartyIdentification2_ID = @ASP_AgentParty_PartyIdentification2_ID , ASP_AgentParty_PartyIdentification3_schemeID = @ASP_AgentParty_PartyIdentification3_schemeID , ASP_AgentParty_PartyIdentification3_ID = @ASP_AgentParty_PartyIdentification3_ID , ASP_AgentParty_PartyIdentification4_schemeID = @ASP_AgentParty_PartyIdentification4_schemeID
+ , ASP_AgentParty_PartyIdentification4_ID = @ASP_AgentParty_PartyIdentification4_ID , ASP_AgentParty_PartyIdentification5_schemeID = @ASP_AgentParty_PartyIdentification5_schemeID , ASP_AgentParty_PartyIdentification5_ID = @ASP_AgentParty_PartyIdentification5_ID , ASP_AgentParty_PartyName = @ASP_AgentParty_PartyName , ASP_AgentParty_PostalAddress_StreetName = @ASP_AgentParty_PostalAddress_StreetName , ASP_AgentParty_PostalAddress_Room = @ASP_AgentParty_PostalAddress_Room , ASP_AgentParty_PostalAddress_BuildingNumber = @ASP_AgentParty_PostalAddress_BuildingNumber
+ , ASP_AgentParty_PostalAddress_BuildingName = @ASP_AgentParty_PostalAddress_BuildingName , ASP_AgentParty_PostalAddress_CitySubdivisionName = @ASP_AgentParty_PostalAddress_CitySubdivisionName , ASP_AgentParty_PostalAddress_CityName = @ASP_AgentParty_PostalAddress_CityName , ASP_AgentParty_PostalAddress_Country = @ASP_AgentParty_PostalAddress_Country , ASP_AgentParty_PartyTaxSchemeName = @ASP_AgentParty_PartyTaxSchemeName , ASP_AgentParty_PartyTaxSchemeTaxTypeCode = @ASP_AgentParty_PartyTaxSchemeTaxTypeCode , ASP_AgentParty_WebsiteURI = @ASP_AgentParty_WebsiteURI
+ , ASP_AgentParty_Contact_Telephone = @ASP_AgentParty_Contact_Telephone , ASP_AgentParty_Contact_Telefax = @ASP_AgentParty_Contact_Telefax , ASP_AgentParty_Contact_ElectronicMail = @ASP_AgentParty_Contact_ElectronicMail , ASP_AgentParty_Person_FirstName = @ASP_AgentParty_Person_FirstName , ASP_AgentParty_Person_FamilyName = @ASP_AgentParty_Person_FamilyName , ASP_AgentParty_Person_MiddleName = @ASP_AgentParty_Person_MiddleName , ASP_AgentParty_Person_NameSuffix = @ASP_AgentParty_Person_NameSuffix
+ , ASP_AgentParty_Person_Title = @ASP_AgentParty_Person_Title , ACP_PartyIdentification1_schemeID = @ACP_PartyIdentification1_schemeID , ACP_PartyIdentification1_ID = @ACP_PartyIdentification1_ID , ACP_PartyIdentification2_schemeID = @ACP_PartyIdentification2_schemeID , ACP_PartyIdentification2_ID = @ACP_PartyIdentification2_ID , ACP_PartyIdentification3_schemeID = @ACP_PartyIdentification3_schemeID , ACP_PartyIdentification3_ID = @ACP_PartyIdentification3_ID
+ , ACP_PartyIdentification4_schemeID = @ACP_PartyIdentification4_schemeID , ACP_PartyIdentification4_ID = @ACP_PartyIdentification4_ID , ACP_PartyIdentification5_schemeID = @ACP_PartyIdentification5_schemeID , ACP_PartyIdentification5_ID = @ACP_PartyIdentification5_ID , ACP_PartyName = @ACP_PartyName , ACP_PostalAddress_StreetName = @ACP_PostalAddress_StreetName , ACP_PostalAddress_Room = @ACP_PostalAddress_Room
+ , ACP_PostalAddress_BuildingNumber = @ACP_PostalAddress_BuildingNumber , ACP_PostalAddress_BuildingName = @ACP_PostalAddress_BuildingName , ACP_PostalAddress_CitySubdivisionName = @ACP_PostalAddress_CitySubdivisionName , ACP_PostalAddress_CityName = @ACP_PostalAddress_CityName , ACP_PostalAddress_Country = @ACP_PostalAddress_Country , ACP_PartyTaxSchemeName = @ACP_PartyTaxSchemeName , ACP_PartyTaxSchemeTaxTypeCode = @ACP_PartyTaxSchemeTaxTypeCode
+ , ACP_WebsiteURI = @ACP_WebsiteURI , ACP_Contact_Telephone = @ACP_Contact_Telephone , ACP_Contact_Telefax = @ACP_Contact_Telefax , ACP_Contact_ElectronicMail = @ACP_Contact_ElectronicMail , ACP_Person_FirstName = @ACP_Person_FirstName , ACP_Person_FamilyName = @ACP_Person_FamilyName , ACP_Person_MiddleName = @ACP_Person_MiddleName
+ , ACP_Person_NameSuffix = @ACP_Person_NameSuffix , ACP_Person_Title = @ACP_Person_Title , ACP_AgentParty_PartyIdentification1_schemeID = @ACP_AgentParty_PartyIdentification1_schemeID , ACP_AgentParty_PartyIdentification1_ID = @ACP_AgentParty_PartyIdentification1_ID , ACP_AgentParty_PartyIdentification2_schemeID = @ACP_AgentParty_PartyIdentification2_schemeID , ACP_AgentParty_PartyIdentification2_ID = @ACP_AgentParty_PartyIdentification2_ID , ACP_AgentParty_PartyIdentification3_schemeID = @ACP_AgentParty_PartyIdentification3_schemeID
+ , ACP_AgentParty_PartyIdentification3_ID = @ACP_AgentParty_PartyIdentification3_ID , ACP_AgentParty_PartyIdentification4_schemeID = @ACP_AgentParty_PartyIdentification4_schemeID , ACP_AgentParty_PartyIdentification4_ID = @ACP_AgentParty_PartyIdentification4_ID , ACP_AgentParty_PartyIdentification5_schemeID = @ACP_AgentParty_PartyIdentification5_schemeID , ACP_AgentParty_PartyIdentification5_ID = @ACP_AgentParty_PartyIdentification5_ID , ACP_AgentParty_PartyName = @ACP_AgentParty_PartyName , ACP_AgentParty_PostalAddress_StreetName = @ACP_AgentParty_PostalAddress_StreetName
+ , ACP_AgentParty_PostalAddress_Room = @ACP_AgentParty_PostalAddress_Room , ACP_AgentParty_PostalAddress_BuildingNumber = @ACP_AgentParty_PostalAddress_BuildingNumber , ACP_AgentParty_PostalAddress_BuildingName = @ACP_AgentParty_PostalAddress_BuildingName , ACP_AgentParty_PostalAddress_CitySubdivisionName = @ACP_AgentParty_PostalAddress_CitySubdivisionName , ACP_AgentParty_PostalAddress_CityName = @ACP_AgentParty_PostalAddress_CityName , ACP_AgentParty_PostalAddress_Country = @ACP_AgentParty_PostalAddress_Country , ACP_AgentParty_PartyTaxSchemeName = @ACP_AgentParty_PartyTaxSchemeName
+ , ACP_AgentParty_PartyTaxSchemeTaxTypeCode = @ACP_AgentParty_PartyTaxSchemeTaxTypeCode , ACP_AgentParty_WebsiteURI = @ACP_AgentParty_WebsiteURI , ACP_AgentParty_Contact_Telephone = @ACP_AgentParty_Contact_Telephone , ACP_AgentParty_Contact_Telefax = @ACP_AgentParty_Contact_Telefax , ACP_AgentParty_Contact_ElectronicMail = @ACP_AgentParty_Contact_ElectronicMail , ACP_AgentParty_Person_FirstName = @ACP_AgentParty_Person_FirstName , ACP_AgentParty_Person_FamilyName = @ACP_AgentParty_Person_FamilyName
+ , ACP_AgentParty_Person_MiddleName = @ACP_AgentParty_Person_MiddleName , ACP_AgentParty_Person_NameSuffix = @ACP_AgentParty_Person_NameSuffix , ACP_AgentParty_Person_Title = @ACP_AgentParty_Person_Title , TaxExchangeRate_SourceCurrencyCode = @TaxExchangeRate_SourceCurrencyCode , TaxExchangeRate_TargetCurrencyCode = @TaxExchangeRate_TargetCurrencyCode , TaxExchangeRate_CalculationRate = @TaxExchangeRate_CalculationRate , TaxExchangeRate_Date = @TaxExchangeRate_Date
+ , PricingExchangeRate_SourceCurrencyCode = @PricingExchangeRate_SourceCurrencyCode , PricingExchangeRate_TargetCurrencyCode = @PricingExchangeRate_TargetCurrencyCode , PricingExchangeRate_CalculationRate = @PricingExchangeRate_CalculationRate , PricingExchangeRate_Date = @PricingExchangeRate_Date , PaymentExchangeRate_SourceCurrencyCode = @PaymentExchangeRate_SourceCurrencyCode , PaymentExchangeRate_TargetCurrencyCode = @PaymentExchangeRate_TargetCurrencyCode , PaymentExchangeRate_CalculationRate = @PaymentExchangeRate_CalculationRate
+ , PaymentExchangeRate_Date = @PaymentExchangeRate_Date , PaymentAlternativeExchangeRate_SourceCurrencyCode = @PaymentAlternativeExchangeRate_SourceCurrencyCode , PaymentAlternativeExchangeRate_TargetCurrencyCode = @PaymentAlternativeExchangeRate_TargetCurrencyCode , PaymentAlternativeExchangeRate_CalculationRate = @PaymentAlternativeExchangeRate_CalculationRate , PaymentAlternativeExchangeRate_Date = @PaymentAlternativeExchangeRate_Date , TaxAmount = @TaxAmount , LegalMonetaryTotal_LineExtensionAmount = @LegalMonetaryTotal_LineExtensionAmount
+ , LegalMonetaryTotal_TaxExclusiveAmount = @LegalMonetaryTotal_TaxExclusiveAmount , LegalMonetaryTotal_TaxInclusiveAmount = @LegalMonetaryTotal_TaxInclusiveAmount , LegalMonetaryTotal_AllowanceTotalAmount = @LegalMonetaryTotal_AllowanceTotalAmount , LegalMonetaryTotal_ChargeTotalAmount = @LegalMonetaryTotal_ChargeTotalAmount , LegalMonetaryTotal_PayableRoundingAmount = @LegalMonetaryTotal_PayableRoundingAmount , LegalMonetaryTotal_PayableAmount = @LegalMonetaryTotal_PayableAmount
+WHERE InvoiceID = @InvoiceID</value>
+  </data>
+  <metadata name="tbInvoice_TaxSubtotal.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>781, 17</value>
+  </metadata>
+  <metadata name="sqlCommand16.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand16.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand16.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand14.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand14.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand14.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlCommand14.CommandText" xml:space="preserve">
+    <value>INSERT INTO Invoice_TaxSubtotal (
+InvoiceID , TaxableAmount , currencyID , TaxAmount , PerUnitAmount , CalculationSequenceNumeric , Percent_
+ , TaxCategory_TaxScheme_Name , TaxCategory_TaxScheme_TaxTypeCode , TaxCategory_TaxExemptionReason , TaxCategory_TaxExemptionReasonCode)
+ VALUES (
+@InvoiceID , @TaxableAmount , @currencyID , @TaxAmount , @PerUnitAmount , @CalculationSequenceNumeric , @Percent_
+ , @TaxCategory_TaxScheme_Name , @TaxCategory_TaxScheme_TaxTypeCode , @TaxCategory_TaxExemptionReason , @TaxCategory_TaxExemptionReasonCode)
+SELECT @PRIMARYFIELD_nID = SCOPE_IDENTITY() 
+</value>
+  </data>
+  <metadata name="sqlCommand13.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand13.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand13.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand15.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand15.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand15.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlCommand15.CommandText" xml:space="preserve">
+    <value>UPDATE Invoice_TaxSubtotal SET 
+InvoiceID = @InvoiceID , TaxableAmount = @TaxableAmount , currencyID = @currencyID , TaxAmount = @TaxAmount , PerUnitAmount = @PerUnitAmount , CalculationSequenceNumeric = @CalculationSequenceNumeric , Percent_ = @Percent_
+ , TaxCategory_TaxScheme_Name = @TaxCategory_TaxScheme_Name , TaxCategory_TaxScheme_TaxTypeCode = @TaxCategory_TaxScheme_TaxTypeCode , TaxCategory_TaxExemptionReason = @TaxCategory_TaxExemptionReason , TaxCategory_TaxExemptionReasonCode = @TaxCategory_TaxExemptionReasonCode
+WHERE nID = @nID</value>
+  </data>
+  <metadata name="tbInvoice_WithholdingTaxSubtotal.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>236, 92</value>
+  </metadata>
+  <metadata name="sqlCommand48.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand48.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand48.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand46.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand46.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand46.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlCommand46.CommandText" xml:space="preserve">
+    <value>INSERT INTO Invoice_WithholdingTaxSubtotal (
+InvoiceID , TaxableAmount , currencyID , TaxAmount , PerUnitAmount , CalculationSequenceNumeric , Percent_
+ , TaxCategory_TaxScheme_Name , TaxCategory_TaxScheme_TaxTypeCode , TaxCategory_TaxExemptionReason , TaxCategory_TaxExemptionReasonCode)
+ VALUES (
+@InvoiceID , @TaxableAmount , @currencyID , @TaxAmount , @PerUnitAmount , @CalculationSequenceNumeric , @Percent_
+ , @TaxCategory_TaxScheme_Name , @TaxCategory_TaxScheme_TaxTypeCode , @TaxCategory_TaxExemptionReason , @TaxCategory_TaxExemptionReasonCode)
+SELECT @PRIMARYFIELD_nID = SCOPE_IDENTITY() 
+</value>
+  </data>
+  <metadata name="sqlCommand45.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand45.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand45.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand47.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand47.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand47.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlCommand47.CommandText" xml:space="preserve">
+    <value>UPDATE Invoice_WithholdingTaxSubtotal SET 
+InvoiceID = @InvoiceID , TaxableAmount = @TaxableAmount , currencyID = @currencyID , TaxAmount = @TaxAmount , PerUnitAmount = @PerUnitAmount , CalculationSequenceNumeric = @CalculationSequenceNumeric , Percent_ = @Percent_
+ , TaxCategory_TaxScheme_Name = @TaxCategory_TaxScheme_Name , TaxCategory_TaxScheme_TaxTypeCode = @TaxCategory_TaxScheme_TaxTypeCode , TaxCategory_TaxExemptionReason = @TaxCategory_TaxExemptionReason , TaxCategory_TaxExemptionReasonCode = @TaxCategory_TaxExemptionReasonCode
+WHERE nID = @nID</value>
+  </data>
+  <metadata name="tbInvoice_AllowanceCharge.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>983, 17</value>
+  </metadata>
+  <metadata name="sqlCommand20.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand20.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand20.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand18.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand18.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand18.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlCommand18.CommandText" xml:space="preserve">
+    <value>INSERT INTO Invoice_AllowanceCharge (
+InvoiceID , ChargeIndicator , AllowanceChargeReason , MultiplierFactorNumeric , Amount , Amount_currencyID , BaseAmount
+ , BaseAmount_currencyID)
+ VALUES (
+@InvoiceID , @ChargeIndicator , @AllowanceChargeReason , @MultiplierFactorNumeric , @Amount , @Amount_currencyID , @BaseAmount
+ , @BaseAmount_currencyID)
+SELECT @PRIMARYFIELD_nID = SCOPE_IDENTITY() 
+</value>
+  </data>
+  <metadata name="sqlCommand17.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand17.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand17.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand19.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand19.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand19.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlCommand19.CommandText" xml:space="preserve">
+    <value>UPDATE Invoice_AllowanceCharge SET 
+InvoiceID = @InvoiceID , ChargeIndicator = @ChargeIndicator , AllowanceChargeReason = @AllowanceChargeReason , MultiplierFactorNumeric = @MultiplierFactorNumeric , Amount = @Amount , Amount_currencyID = @Amount_currencyID , BaseAmount = @BaseAmount
+ , BaseAmount_currencyID = @BaseAmount_currencyID
+WHERE nID = @nID</value>
+  </data>
+  <metadata name="tbInvoice_Note.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="sqlCommand44.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand44.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand44.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand42.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand42.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand42.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand41.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand41.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand41.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand43.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand43.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand43.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="tbInvoice_OrderReference.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1223, 17</value>
+  </metadata>
+  <metadata name="sqlCommand24.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand24.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand24.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand22.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand22.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand22.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand21.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand21.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand21.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand23.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand23.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand23.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="tbInvoice_DespatchDocumentReference.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 60</value>
+  </metadata>
+  <metadata name="sqlCommand28.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand28.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand28.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand26.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand26.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand26.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand25.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand25.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand25.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand27.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand27.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand27.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="tbInvoice_PaymentMeans.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>341, 60</value>
+  </metadata>
+  <metadata name="sqlCommand32.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand32.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand32.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand30.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand30.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand30.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlCommand30.CommandText" xml:space="preserve">
+    <value>INSERT INTO Invoice_PaymentMeans (
+InvoiceID , PaymentMeansCode , PaymentDueDate , PaymentChannelCode , InstructionNote , PayeeFinancialAccount_ID , PayeeFinancialAccount_CurrencyCode
+ , PayeeFinancialAccount_PaymentNote)
+ VALUES (
+@InvoiceID , @PaymentMeansCode , @PaymentDueDate , @PaymentChannelCode , @InstructionNote , @PayeeFinancialAccount_ID , @PayeeFinancialAccount_CurrencyCode
+ , @PayeeFinancialAccount_PaymentNote)
+SELECT @PRIMARYFIELD_nID = SCOPE_IDENTITY() 
+</value>
+  </data>
+  <metadata name="sqlCommand29.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand29.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand29.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand31.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand31.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand31.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlCommand31.CommandText" xml:space="preserve">
+    <value>UPDATE Invoice_PaymentMeans SET 
+InvoiceID = @InvoiceID , PaymentMeansCode = @PaymentMeansCode , PaymentDueDate = @PaymentDueDate , PaymentChannelCode = @PaymentChannelCode , InstructionNote = @InstructionNote , PayeeFinancialAccount_ID = @PayeeFinancialAccount_ID , PayeeFinancialAccount_CurrencyCode = @PayeeFinancialAccount_CurrencyCode
+ , PayeeFinancialAccount_PaymentNote = @PayeeFinancialAccount_PaymentNote
+WHERE nID = @nID</value>
+  </data>
+  <metadata name="tbInvoice_PaymentTerms.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>567, 60</value>
+  </metadata>
+  <metadata name="sqlCommand36.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand36.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand36.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand34.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand34.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand34.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlCommand34.CommandText" xml:space="preserve">
+    <value>INSERT INTO Invoice_PaymentTerms (
+InvoiceID , Note , PenaltySurchargePercent , Amount , Amount_currencyID)
+ VALUES (
+@InvoiceID , @Note , @PenaltySurchargePercent , @Amount , @Amount_currencyID)
+SELECT @PRIMARYFIELD_nID = SCOPE_IDENTITY() 
+</value>
+  </data>
+  <metadata name="sqlCommand33.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand33.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand33.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand35.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand35.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand35.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlCommand35.CommandText" xml:space="preserve">
+    <value>UPDATE Invoice_PaymentTerms SET 
+InvoiceID = @InvoiceID , Note = @Note , PenaltySurchargePercent = @PenaltySurchargePercent , Amount = @Amount , Amount_currencyID = @Amount_currencyID
+WHERE nID = @nID</value>
+  </data>
+  <metadata name="tbInvoice_ReceiptDocumentReference.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>789, 60</value>
+  </metadata>
+  <metadata name="sqlCommand40.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand40.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand40.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand38.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand38.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand38.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand37.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand37.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand37.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand39.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand39.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand39.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="tbInvoice_BillingReference.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1092, 64</value>
+  </metadata>
+  <metadata name="sqlCommand60.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand60.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand60.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand58.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand58.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand58.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlCommand58.CommandText" xml:space="preserve">
+    <value>INSERT INTO Invoice_BillingReference (
+InvoiceID , ID , IssueDate , DocumentTypeCode , DocumentType)
+ VALUES (
+@InvoiceID , @ID , @IssueDate , @DocumentTypeCode , @DocumentType)
+SELECT @PRIMARYFIELD_nID = SCOPE_IDENTITY() 
+</value>
+  </data>
+  <metadata name="sqlCommand57.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand57.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand57.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand59.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand59.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand59.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>841, 92</value>
+  </metadata>
+  <metadata name="tbInvoiceLine.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>406, 17</value>
+  </metadata>
+  <metadata name="sqlCommand8.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand8.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand8.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand6.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand6.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand6.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlCommand6.CommandText" xml:space="preserve">
+    <value>INSERT INTO InvoiceLine (
+InvoiceID , ID , Note , InvoicedQuantity , InvoicedQuantity_unitCode , LineExtensionAmount , currencyID
+ , AllowanceCharge_ChargeIndicator , AllowanceCharge_AllowanceChargeReason , AllowanceCharge_Amount , AllowanceCharge_BaseAmount , AllowanceCharge_MultiplierFactorNumeric , Item_Name , Item_Description
+ , Item_BrandName , Item_ModelName , Item_ItemClassificationCode , Item_BuyersItemIdentification_ID , Item_SellersItemIdentification_ID , Item_ManufacturersItemIdentification_ID , PriceAmount
+ , TaxAmount , WithholdingTaxAmount , GTIPNO , TransportModeCode , DeliveryTerms)
+ VALUES (
+@InvoiceID , @ID , @Note , @InvoicedQuantity , @InvoicedQuantity_unitCode , @LineExtensionAmount , @currencyID
+ , @AllowanceCharge_ChargeIndicator , @AllowanceCharge_AllowanceChargeReason , @AllowanceCharge_Amount , @AllowanceCharge_BaseAmount , @AllowanceCharge_MultiplierFactorNumeric , @Item_Name , @Item_Description
+ , @Item_BrandName , @Item_ModelName , @Item_ItemClassificationCode , @Item_BuyersItemIdentification_ID , @Item_SellersItemIdentification_ID , @Item_ManufacturersItemIdentification_ID , @PriceAmount
+ , @TaxAmount , @WithholdingTaxAmount , @GTIPNO , @TransportModeCode , @DeliveryTerms)
+SELECT @PRIMARYFIELD_InvoiceLineID = SCOPE_IDENTITY() 
+</value>
+  </data>
+  <metadata name="sqlCommand5.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand5.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand7.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand7.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand7.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlCommand7.CommandText" xml:space="preserve">
+    <value>UPDATE InvoiceLine SET 
+InvoiceID = @InvoiceID , ID = @ID , Note = @Note , InvoicedQuantity = @InvoicedQuantity , InvoicedQuantity_unitCode = @InvoicedQuantity_unitCode , LineExtensionAmount = @LineExtensionAmount , currencyID = @currencyID
+ , AllowanceCharge_ChargeIndicator = @AllowanceCharge_ChargeIndicator , AllowanceCharge_AllowanceChargeReason = @AllowanceCharge_AllowanceChargeReason , AllowanceCharge_Amount = @AllowanceCharge_Amount , AllowanceCharge_BaseAmount = @AllowanceCharge_BaseAmount , AllowanceCharge_MultiplierFactorNumeric = @AllowanceCharge_MultiplierFactorNumeric , Item_Name = @Item_Name , Item_Description = @Item_Description
+ , Item_BrandName = @Item_BrandName , Item_ModelName = @Item_ModelName , Item_ItemClassificationCode = @Item_ItemClassificationCode , Item_BuyersItemIdentification_ID = @Item_BuyersItemIdentification_ID , Item_SellersItemIdentification_ID = @Item_SellersItemIdentification_ID , Item_ManufacturersItemIdentification_ID = @Item_ManufacturersItemIdentification_ID , PriceAmount = @PriceAmount
+ , TaxAmount = @TaxAmount , WithholdingTaxAmount = @WithholdingTaxAmount , GTIPNO = @GTIPNO , TransportModeCode = @TransportModeCode , DeliveryTerms = @DeliveryTerms
+WHERE InvoiceLineID = @InvoiceLineID</value>
+  </data>
+  <metadata name="tbInvoiceLine_TaxSubTotal.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>549, 17</value>
+  </metadata>
+  <metadata name="sqlCommand12.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand12.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand12.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand10.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand10.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand10.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlCommand10.CommandText" xml:space="preserve">
+    <value>INSERT INTO InvoiceLine_TaxSubtotal (
+InvoiceLineID , TaxableAmount , currencyID , TaxAmount , PerUnitAmount , CalculationSequenceNumeric , Percent_
+ , TaxCategory_TaxScheme_Name , TaxCategory_TaxScheme_TaxTypeCode , TaxCategory_TaxExemptionReason , TaxCategory_TaxExemptionReasonCode)
+ VALUES (
+@InvoiceLineID , @TaxableAmount , @currencyID , @TaxAmount , @PerUnitAmount , @CalculationSequenceNumeric , @Percent_
+ , @TaxCategory_TaxScheme_Name , @TaxCategory_TaxScheme_TaxTypeCode , @TaxCategory_TaxExemptionReason , @TaxCategory_TaxExemptionReasonCode)
+SELECT @PRIMARYFIELD_nID = SCOPE_IDENTITY() 
+</value>
+  </data>
+  <metadata name="sqlCommand9.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand9.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand9.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand11.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand11.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand11.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlCommand11.CommandText" xml:space="preserve">
+    <value>UPDATE InvoiceLine_TaxSubtotal SET 
+InvoiceLineID = @InvoiceLineID , TaxableAmount = @TaxableAmount , currencyID = @currencyID , TaxAmount = @TaxAmount , PerUnitAmount = @PerUnitAmount , CalculationSequenceNumeric = @CalculationSequenceNumeric , Percent_ = @Percent_
+ , TaxCategory_TaxScheme_Name = @TaxCategory_TaxScheme_Name , TaxCategory_TaxScheme_TaxTypeCode = @TaxCategory_TaxScheme_TaxTypeCode , TaxCategory_TaxExemptionReason = @TaxCategory_TaxExemptionReason , TaxCategory_TaxExemptionReasonCode = @TaxCategory_TaxExemptionReasonCode
+WHERE nID = @nID</value>
+  </data>
+  <metadata name="tbInvoiceLine_WithholdingTaxSubTotal.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>474, 92</value>
+  </metadata>
+  <metadata name="sqlCommand52.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand52.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand52.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand50.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand50.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand50.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlCommand50.CommandText" xml:space="preserve">
+    <value>INSERT INTO InvoiceLine_WithholdingTaxSubtotal (
+InvoiceLineID , TaxableAmount , currencyID , TaxAmount , PerUnitAmount , CalculationSequenceNumeric , Percent_
+ , TaxCategory_TaxScheme_Name , TaxCategory_TaxScheme_TaxTypeCode , TaxCategory_TaxExemptionReason , TaxCategory_TaxExemptionReasonCode)
+ VALUES (
+@InvoiceLineID , @TaxableAmount , @currencyID , @TaxAmount , @PerUnitAmount , @CalculationSequenceNumeric , @Percent_
+ , @TaxCategory_TaxScheme_Name , @TaxCategory_TaxScheme_TaxTypeCode , @TaxCategory_TaxExemptionReason , @TaxCategory_TaxExemptionReasonCode)
+SELECT @PRIMARYFIELD_nID = SCOPE_IDENTITY() 
+</value>
+  </data>
+  <metadata name="sqlCommand49.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand49.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand49.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand51.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand51.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand51.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlCommand51.CommandText" xml:space="preserve">
+    <value>UPDATE InvoiceLine_WithholdingTaxSubtotal SET 
+InvoiceLineID = @InvoiceLineID , TaxableAmount = @TaxableAmount , currencyID = @currencyID , TaxAmount = @TaxAmount , PerUnitAmount = @PerUnitAmount , CalculationSequenceNumeric = @CalculationSequenceNumeric , Percent_ = @Percent_
+ , TaxCategory_TaxScheme_Name = @TaxCategory_TaxScheme_Name , TaxCategory_TaxScheme_TaxTypeCode = @TaxCategory_TaxScheme_TaxTypeCode , TaxCategory_TaxExemptionReason = @TaxCategory_TaxExemptionReason , TaxCategory_TaxExemptionReasonCode = @TaxCategory_TaxExemptionReasonCode
+WHERE nID = @nID</value>
+  </data>
+  <metadata name="tbInvoiceLine_Packages.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>995, 92</value>
+  </metadata>
+  <metadata name="sqlCommand56.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand56.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand56.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand54.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand54.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand54.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlCommand54.CommandText" xml:space="preserve">
+    <value>INSERT INTO InvoiceLine_Packages (
+InvoiceLineID , ID , Quantity , PackagingTypeCode)
+ VALUES (
+@InvoiceLineID , @ID , @Quantity , @PackagingTypeCode)
+SELECT @PRIMARYFIELD_nID = SCOPE_IDENTITY() 
+</value>
+  </data>
+  <metadata name="sqlCommand53.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand53.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>164, 0</value>
+  </metadata>
+  <metadata name="sqlCommand53.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand55.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlCommand55.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>82, 0</value>
+  </metadata>
+  <metadata name="sqlCommand55.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="SaveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>81, 87</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>152</value>
+  </metadata>
+</root>
