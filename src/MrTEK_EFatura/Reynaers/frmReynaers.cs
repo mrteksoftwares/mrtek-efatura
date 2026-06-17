@@ -183,7 +183,7 @@ namespace MrTEK_EFatura
                                     dbInvoice.ACP_PartyName = (sLine.Split(';')[2].Trim() + " " + sLine.Split(';')[3].Trim()).Trim();
                                     dbInvoice.ACP_PartyIdentification1_schemeID = "VKN";
 
-                                    if (sLine.Split(';')[43].Split('/').Length > 0)
+                                    if (sLine.Split(';')[43]!="" &&  sLine.Split(';')[43].Split('/').Length > 0)
                                     {
                                         dbInvoice.ACP_PartyTaxSchemeName = sLine.Split(';')[43].Split('/')[0].Trim();
                                         dbInvoice.ACP_PartyTaxSchemeTaxTypeCode = sLine.Split(';')[43].Split('/')[1].Replace(" ", "").Replace(".", "");

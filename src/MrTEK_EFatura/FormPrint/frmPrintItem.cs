@@ -229,8 +229,8 @@ namespace MrTEK_EFatura
             System.Data.SqlClient.SqlCommand cmd = new System.Data.SqlClient.SqlCommand();
             bool bFound = false;
             long ReportType = 0;
-            //try
-            //{
+            try
+            {
                 cmd.Connection = DF.ActiveConn.dbConn;
                 cmd.Parameters.Clear();
                 txtReportName.Text = txtReportName.Text.Replace("'", " ");
@@ -306,11 +306,11 @@ namespace MrTEK_EFatura
                 cmd.Dispose();
                 this.DialogResult = System.Windows.Forms.DialogResult.OK;
                 this.Close();
-            //}
-            //catch (Exception ex)
-            //{
-            //    UT.RaiseError(this.Name, "cmdSave_Click", ex);
-            //}
+            }
+            catch (Exception ex)
+            {
+                UT.RaiseError(this.Name, "cmdSave_Click", ex);
+            }
 
         }
 

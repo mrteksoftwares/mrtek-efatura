@@ -390,9 +390,9 @@ namespace MrTEK_EFatura
 
         private void btnShowXslt_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-            if (DF.Integrator == IntegratorType.Uyumsoft)
+            try
+            {
+                if (DF.Integrator == IntegratorType.Uyumsoft)
             {
 
                 Uyumsoft.InvoiceType uInvoice = null;
@@ -433,11 +433,11 @@ namespace MrTEK_EFatura
 
             }
 
-            //}
-            //catch (System.Exception ex)
-            //{
-            //    UT.RaiseError(this.Name, "", ex);
-            //}
+            }
+            catch (System.Exception ex)
+            {
+                UT.RaiseError(this.Name, "", ex);
+            }
         }
 
         private void grInvoice_Note_KeyDown(object sender, KeyEventArgs e)

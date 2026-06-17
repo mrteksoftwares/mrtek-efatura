@@ -187,20 +187,20 @@ namespace MrTEK_EFatura
         }
         private void grGelenKutusu_DoubleClick(object sender, EventArgs e)
         {
-            //try
-            //{
-            if (grGelenKutusuView.FocusedRowHandle < 0) return;
+            try
+            {
+                if (grGelenKutusuView.FocusedRowHandle < 0) return;
             frmInvoice f = new frmInvoice();
             f.InvoiceID = (int)grGelenKutusuView.GetDataRow(grGelenKutusuView.FocusedRowHandle)["InvoiceID"];
             if (f.ShowDialog() == DialogResult.OK)
             {
                 List_GelenKutusu();
             }
-            //}
-            //catch (System.Exception ex)
-            //{
-            //    UT.RaiseError(this.Name, "grGelenKutusu_DoubleClick", ex);
-            //}
+            }
+            catch (System.Exception ex)
+            {
+                UT.RaiseError(this.Name, "grGelenKutusu_DoubleClick", ex);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -298,38 +298,38 @@ namespace MrTEK_EFatura
 
         private void grGidenKutusu_DoubleClick(object sender, EventArgs e)
         {
-            //try
-            //{
-            if (grGidenKutusuView.FocusedRowHandle < 0) return;
+            try
+            {
+                if (grGidenKutusuView.FocusedRowHandle < 0) return;
             frmInvoice f = new frmInvoice();
             f.InvoiceID = (int)grGidenKutusuView.GetDataRow(grGidenKutusuView.FocusedRowHandle)["InvoiceID"];
             if (f.ShowDialog() == DialogResult.OK)
             {
                 List_GelenKutusu();
             }
-            //}
-            //catch (System.Exception ex)
-            //{
-            //    UT.RaiseError(this.Name, "grGelenKutusu_DoubleClick", ex);
-            //}
+            }
+            catch (System.Exception ex)
+            {
+                UT.RaiseError(this.Name, "grGelenKutusu_DoubleClick", ex);
+            }
         }
 
         private void grGonderilmisler_DoubleClick(object sender, EventArgs e)
         {
-            //try
-            //{
-            if (grGonderilmislerView.FocusedRowHandle < 0) return;
+            try
+            {
+                if (grGonderilmislerView.FocusedRowHandle < 0) return;
             frmInvoice f = new frmInvoice();
             f.InvoiceID = (int)grGonderilmislerView.GetDataRow(grGonderilmislerView.FocusedRowHandle)["InvoiceID"];
             if (f.ShowDialog() == DialogResult.OK)
             {
                 List_GelenKutusu();
             }
-            //}
-            //catch (System.Exception ex)
-            //{
-            //    UT.RaiseError(this.Name, "grGelenKutusu_DoubleClick", ex);
-            //}
+            }
+            catch (System.Exception ex)
+            {
+                UT.RaiseError(this.Name, "grGelenKutusu_DoubleClick", ex);
+            }
         }
 
         private void faturayiAcToolStripMenuItem_Click(object sender, EventArgs e)
