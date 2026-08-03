@@ -288,10 +288,14 @@ namespace MrTEK_EFatura
                                         GenelNakitIskontoOran = GenelNakitIskonto / (AraToplam + GenelNakitIskonto);
                                     }
                                     dbInvoice.LegalMonetaryTotal_LineExtensionAmount = AraToplam;
-                                    dbInvoice.LegalMonetaryTotal_TaxExclusiveAmount = AraToplam;
-                                    dbInvoice.LegalMonetaryTotal_TaxInclusiveAmount = GenelToplam;
-                                    dbInvoice.LegalMonetaryTotal_PayableRoundingAmount = 0;
-                                    dbInvoice.LegalMonetaryTotal_PayableAmount = GenelToplam;
+                                    
+                                    
+                                        dbInvoice.LegalMonetaryTotal_TaxExclusiveAmount = AraToplam;
+                                        dbInvoice.LegalMonetaryTotal_TaxInclusiveAmount = GenelToplam;
+                                        dbInvoice.LegalMonetaryTotal_PayableRoundingAmount = 0;
+                                     dbInvoice.LegalMonetaryTotal_PayableAmount = GenelToplam;
+
+                                    
 
 
                                     dbInvoice.Note = new Invoice_Note[8];
@@ -408,6 +412,22 @@ namespace MrTEK_EFatura
                                     }
                                     //----- end of vergiler --------------------------
 
+
+                                    if (dbInvoice.ProfileID == "IHRACAT")
+                                    {
+                                        dbInvoice.LegalMonetaryTotal_TaxExclusiveAmount = AraToplam;
+                                        dbInvoice.LegalMonetaryTotal_TaxInclusiveAmount = AraToplam;
+                                        dbInvoice.LegalMonetaryTotal_PayableRoundingAmount = 0;
+                                        dbInvoice.TaxAmount = 0;
+                                        dbInvoice.LegalMonetaryTotal_PayableAmount = AraToplam;
+                                        if (dbInvoice.TaxSubtotal.Length > 0)
+                                        {
+                                            dbInvoice.TaxSubtotal[0].TaxAmount = 0;
+                                            dbInvoice.TaxSubtotal[0].Percent_ = 0;
+                                            dbInvoice.TaxSubtotal[0].TaxCategory_TaxExemptionReason = "MAL IHRACATI";
+                                            dbInvoice.TaxSubtotal[0].TaxCategory_TaxExemptionReasonCode = "301";
+                                        }
+                                    }
 
                                     InvoiceList.Add(dbInvoice);
 
@@ -691,21 +711,28 @@ namespace MrTEK_EFatura
                                 InvoiceList[i].LineCountNumeric = InvoiceList[i].InvoiceLine.Length;
                             }
 
-                            double TaxTotal = 0;
-                            if (InvoiceList[i].TaxSubtotal != null)
+                            if (InvoiceList[i].ProfileID == "IHRACAT")
                             {
-                                for (int k = 0; k < InvoiceList[i].TaxSubtotal.Length; k++)
+                                // MessageBox.Show(InvoiceList[i].ProfileID);
+                            }
+                            else
+                            {
+                                double TaxTotal = 0;
+
+                                if (InvoiceList[i].TaxSubtotal != null)
                                 {
-                                    if (InvoiceList[i].TaxSubtotal[k].TaxCategory_TaxScheme_TaxTypeCode == "0015")
+                                    for (int k = 0; k < InvoiceList[i].TaxSubtotal.Length; k++)
                                     {
-                                        TaxTotal += InvoiceList[i].TaxSubtotal[k].TaxAmount;
+                                        if (InvoiceList[i].TaxSubtotal[k].TaxCategory_TaxScheme_TaxTypeCode == "0015")
+                                        {
+                                            TaxTotal += InvoiceList[i].TaxSubtotal[k].TaxAmount;
+                                        }
                                     }
                                 }
+
+                                InvoiceList[i].TaxAmount = TaxTotal;
+                                InvoiceList[i].LegalMonetaryTotal_TaxExclusiveAmount = InvoiceList[i].LegalMonetaryTotal_TaxInclusiveAmount - TaxTotal;
                             }
-
-                            InvoiceList[i].TaxAmount = TaxTotal;
-                            InvoiceList[i].LegalMonetaryTotal_TaxExclusiveAmount = InvoiceList[i].LegalMonetaryTotal_TaxInclusiveAmount - TaxTotal;
-
                             string Para = InvoiceList[i].DocumentCurrencyCode;
                             string Kurus = "Kurus";
                             switch (Para)

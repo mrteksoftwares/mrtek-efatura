@@ -11,6 +11,18 @@
       "RelativeMoniker": "D:0:0:{C0A5CCD3-C0CD-43AE-837B-F6A97565544A}|MrTEK_EFatura\\MrTEK_EFatura.csproj|solutionrelative:mrtek_efatura\\classes\\partialdbinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C0A5CCD3-C0CD-43AE-837B-F6A97565544A}|MrTEK_EFatura\\MrTEK_EFatura.csproj|c:\\arge\\mrtek-efatura\\src\\mrtek_efatura\\classes\\dbinvoiceline_taxsubtotal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0A5CCD3-C0CD-43AE-837B-F6A97565544A}|MrTEK_EFatura\\MrTEK_EFatura.csproj|solutionrelative:mrtek_efatura\\classes\\dbinvoiceline_taxsubtotal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0A5CCD3-C0CD-43AE-837B-F6A97565544A}|MrTEK_EFatura\\MrTEK_EFatura.csproj|c:\\arge\\mrtek-efatura\\src\\mrtek_efatura\\dbscripts\\dbcreate_script.sql||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{C0A5CCD3-C0CD-43AE-837B-F6A97565544A}|MrTEK_EFatura\\MrTEK_EFatura.csproj|solutionrelative:mrtek_efatura\\dbscripts\\dbcreate_script.sql||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0A5CCD3-C0CD-43AE-837B-F6A97565544A}|MrTEK_EFatura\\MrTEK_EFatura.csproj|c:\\arge\\mrtek-efatura\\src\\mrtek_efatura\\classes\\dbinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0A5CCD3-C0CD-43AE-837B-F6A97565544A}|MrTEK_EFatura\\MrTEK_EFatura.csproj|solutionrelative:mrtek_efatura\\classes\\dbinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C0A5CCD3-C0CD-43AE-837B-F6A97565544A}|MrTEK_EFatura\\MrTEK_EFatura.csproj|C:\\arge\\mrtek-efatura\\src\\mrtek_efatura\\forms\\frmdboptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C0A5CCD3-C0CD-43AE-837B-F6A97565544A}|MrTEK_EFatura\\MrTEK_EFatura.csproj|solutionrelative:mrtek_efatura\\forms\\frmdboptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -41,8 +53,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DBInvoiceLine_TaxSubtotal.cs",
+              "DocumentMoniker": "C:\\arge\\mrtek-efatura\\src\\MrTEK_EFatura\\classes\\DBInvoiceLine_TaxSubtotal.cs",
+              "RelativeDocumentMoniker": "MrTEK_EFatura\\classes\\DBInvoiceLine_TaxSubtotal.cs",
+              "ToolTip": "C:\\arge\\mrtek-efatura\\src\\MrTEK_EFatura\\classes\\DBInvoiceLine_TaxSubtotal.cs",
+              "RelativeToolTip": "MrTEK_EFatura\\classes\\DBInvoiceLine_TaxSubtotal.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAtwEoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-03T01:22:04.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dbcreate_script.sql",
+              "DocumentMoniker": "C:\\arge\\mrtek-efatura\\src\\MrTEK_EFatura\\dbScripts\\dbcreate_script.sql",
+              "RelativeDocumentMoniker": "MrTEK_EFatura\\dbScripts\\dbcreate_script.sql",
+              "ToolTip": "C:\\arge\\mrtek-efatura\\src\\MrTEK_EFatura\\dbScripts\\dbcreate_script.sql",
+              "RelativeToolTip": "MrTEK_EFatura\\dbScripts\\dbcreate_script.sql",
+              "ViewState": "AgIAAN4CAAAAAAAAAAAUwPQCAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-08-03T01:21:54.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DBInvoice.cs",
+              "DocumentMoniker": "C:\\arge\\mrtek-efatura\\src\\MrTEK_EFatura\\classes\\DBInvoice.cs",
+              "RelativeDocumentMoniker": "MrTEK_EFatura\\classes\\DBInvoice.cs",
+              "ToolTip": "C:\\arge\\mrtek-efatura\\src\\MrTEK_EFatura\\classes\\DBInvoice.cs",
+              "RelativeToolTip": "MrTEK_EFatura\\classes\\DBInvoice.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAAAQwK0AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-03T01:20:13.84Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -51,13 +102,14 @@
               "RelativeDocumentMoniker": "MrTEK_EFatura\\classes\\partialDBInvoice.cs",
               "ToolTip": "C:\\arge\\mrtek-efatura\\src\\MrTEK_EFatura\\classes\\partialDBInvoice.cs",
               "RelativeToolTip": "MrTEK_EFatura\\classes\\partialDBInvoice.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAQwDEAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAD4v2AAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T13:41:00.882Z"
+              "WhenOpened": "2026-06-17T13:41:00.882Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "frmInvoice.cs",
               "DocumentMoniker": "C:\\arge\\mrtek-efatura\\src\\MrTEK_EFatura\\Forms\\frmInvoice.cs",
               "RelativeDocumentMoniker": "MrTEK_EFatura\\Forms\\frmInvoice.cs",
@@ -69,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "frmMain.cs",
               "DocumentMoniker": "C:\\arge\\mrtek-efatura\\src\\MrTEK_EFatura\\Forms\\frmMain.cs",
               "RelativeDocumentMoniker": "MrTEK_EFatura\\Forms\\frmMain.cs",
@@ -87,14 +139,14 @@
               "RelativeDocumentMoniker": "MrTEK_EFatura\\Reynaers\\frmReynaers.cs",
               "ToolTip": "C:\\arge\\mrtek-efatura\\src\\MrTEK_EFatura\\Reynaers\\frmReynaers.cs",
               "RelativeToolTip": "MrTEK_EFatura\\Reynaers\\frmReynaers.cs",
-              "ViewState": "AgIAAMoAAAAAAAAAAAAAwNoAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAALYCAAAAAAAAAAD4v9ACAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-15T13:57:49.217Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "frmDBOptions.cs [Design]",
               "DocumentMoniker": "C:\\arge\\mrtek-efatura\\src\\MrTEK_EFatura\\Forms\\frmDBOptions.cs",
               "RelativeDocumentMoniker": "MrTEK_EFatura\\Forms\\frmDBOptions.cs",
@@ -105,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -117,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "frmPrintItem.cs",
               "DocumentMoniker": "C:\\arge\\mrtek-efatura\\src\\MrTEK_EFatura\\FormPrint\\frmPrintItem.cs",
               "RelativeDocumentMoniker": "MrTEK_EFatura\\FormPrint\\frmPrintItem.cs",
@@ -129,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "frmReynaers.cs [Design]",
               "DocumentMoniker": "C:\\arge\\mrtek-efatura\\src\\MrTEK_EFatura\\Reynaers\\frmReynaers.cs",
               "RelativeDocumentMoniker": "MrTEK_EFatura\\Reynaers\\frmReynaers.cs",
